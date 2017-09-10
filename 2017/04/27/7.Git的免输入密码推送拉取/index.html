@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="Git 版本控制 学习">
+<meta name="description" content="1. RSA key 免密操作首先配置你的git用户名及邮箱，并生成rsa key： 123$ git config --global user.name &quot;你的名字&quot;$ git config --global user.email &quot;你的邮箱&quot;$ ssh-keygen -t rsa -C &quot;你的邮箱&quot;">
 <meta name="keywords" content="Git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git的免输入密码推送拉取">
 <meta property="og:url" content="http://yoursite.com/2017/04/27/7.Git的免输入密码推送拉取/index.html">
 <meta property="og:site_name" content="潇湘夜雨">
-<meta property="og:description" content="Git 版本控制 学习">
+<meta property="og:description" content="1. RSA key 免密操作首先配置你的git用户名及邮箱，并生成rsa key： 123$ git config --global user.name &quot;你的名字&quot;$ git config --global user.email &quot;你的邮箱&quot;$ ssh-keygen -t rsa -C &quot;你的邮箱&quot;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-07T15:49:20.936Z">
+<meta property="og:updated_time" content="2017-09-10T16:57:25.820Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git的免输入密码推送拉取">
-<meta name="twitter:description" content="Git 版本控制 学习">
+<meta name="twitter:description" content="1. RSA key 免密操作首先配置你的git用户名及邮箱，并生成rsa key： 123$ git config --global user.name &quot;你的名字&quot;$ git config --global user.email &quot;你的邮箱&quot;$ ssh-keygen -t rsa -C &quot;你的邮箱&quot;">
 
 
 
@@ -414,10 +414,6 @@
           
 
           
-              <div class="post-description">
-                  Git 版本控制 学习
-              </div>
-          
 
         </div>
       </header>
@@ -434,6 +430,7 @@
       
         <h2 id="1-RSA-key-免密操作"><a href="#1-RSA-key-免密操作" class="headerlink" title="1. RSA key 免密操作"></a>1. RSA key 免密操作</h2><p>首先配置你的git用户名及邮箱，并生成rsa key：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name <span class="string">"你的名字"</span></div><div class="line">$ git config --global user.email <span class="string">"你的邮箱"</span></div><div class="line">$ ssh-keygen -t rsa -C <span class="string">"你的邮箱"</span></div></pre></td></tr></table></figure>
+<a id="more"></a>
 <p>之后，在 <strong>~/.ssh/</strong> 下找到公钥 id_rsa_pub 。然后登录你的代码托管工具，如github、git@osc、coding等，将该公钥一字不差地配置到ssh中，之后使用 <strong>ssh url</strong> 克隆项目，后续的推拉就不需要输入用户名及密码了。</p>
 <h2 id="2-配置credential-helper"><a href="#2-配置credential-helper" class="headerlink" title="2. 配置credential helper"></a>2. 配置credential helper</h2><p>有时我们会使用  <strong>http url</strong> 来克隆代码，这种方式相对宽松些，不需要配置本地 ssh，但需要在每次同步操作输入用户名和密码。通过  <strong>credential helper</strong> 可以帮我们存储凭证（即用户名和密码)，只需要在第一次clone输入用户名和密码，之后就可以自动读取，不需要再手动输入了。</p>
 <p>使用下面的指令来进行配置：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git config --global credential.helper store</div></pre></td></tr></table></figure></p>

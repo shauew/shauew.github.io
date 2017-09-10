@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="Ubuntu启动慢解决">
+<meta name="description" content="是不是会遇到这种情况，明明配置了SSD，且平时Windows下启动也很快。但是安装Ubuntu之后刚开始启动很快，使用一段后或是重置引导，或是Windows下磁盘分区、调整大小等操作后，发现Ubuntu启动奇慢？">
 <meta name="keywords" content="Ubuntu">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu启动时间过长解决（两分多钟）">
 <meta property="og:url" content="http://yoursite.com/2017/03/13/0.Ubuntu启动时间过长解决方案/index.html">
 <meta property="og:site_name" content="潇湘夜雨">
-<meta property="og:description" content="Ubuntu启动慢解决">
+<meta property="og:description" content="是不是会遇到这种情况，明明配置了SSD，且平时Windows下启动也很快。但是安装Ubuntu之后刚开始启动很快，使用一段后或是重置引导，或是Windows下磁盘分区、调整大小等操作后，发现Ubuntu启动奇慢？">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-07T15:49:15.881Z">
+<meta property="og:updated_time" content="2017-09-10T16:58:52.463Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu启动时间过长解决（两分多钟）">
-<meta name="twitter:description" content="Ubuntu启动慢解决">
+<meta name="twitter:description" content="是不是会遇到这种情况，明明配置了SSD，且平时Windows下启动也很快。但是安装Ubuntu之后刚开始启动很快，使用一段后或是重置引导，或是Windows下磁盘分区、调整大小等操作后，发现Ubuntu启动奇慢？">
 
 
 
@@ -414,10 +414,6 @@
           
 
           
-              <div class="post-description">
-                  Ubuntu启动慢解决
-              </div>
-          
 
         </div>
       </header>
@@ -433,13 +429,14 @@
 
       
         <p>是不是会遇到这种情况，明明配置了SSD，且平时Windows下启动也很快。但是安装Ubuntu之后刚开始启动很快，使用一段后或是重置引导，或是Windows下磁盘分区、调整大小等操作后，发现Ubuntu启动奇慢？</p>
+<a id="more"></a>
 <h2 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h2><p>在进行上述的磁盘操作后，可能导致Ubuntu下的盘符发生变化。可以通过grub修复或是EasyBCD修复后可以重新找回Ubuntu系统，但是此时swap分区的ID也发生变化了，而/etc/fstab文件夹中的交换分区的UUID并没有更新，所以启动时交换分区加载出错，导致启动时间变长。<br>（按理说Ubuntu启动应该比Windows快才读，何况是SSD，两分半钟是什么鬼？）</p>
 <h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>如果内存够大（8G+），则可以尝试注释掉/etc/fstab中的swap分区，如下：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">$ sudo vim /etc/fstab</div><div class="line"></div><div class="line"><span class="comment"># /etc/fstab: static file system information.</span></div><div class="line"><span class="comment">#</span></div><div class="line"><span class="comment"># Use 'blkid' to print the universally unique identifier for a</span></div><div class="line"><span class="comment"># device; this may be used with UUID= as a more robust way to name devices</span></div><div class="line"><span class="comment"># that works even if disks are added and removed. See fstab(5).</span></div><div class="line"><span class="comment">#</span></div><div class="line"><span class="comment"># &lt;file system&gt; &lt;mount point&gt;   &lt;type&gt;  &lt;options&gt;       &lt;dump&gt;  &lt;pass&gt;</span></div><div class="line"><span class="comment"># / was on /dev/sda2 during installation</span></div><div class="line">UUID=850088d8-2274-4504-be9b-d4d5959a67a3 /               ext4    errors=remount-ro 0       1</div><div class="line"><span class="comment"># swap was on /dev/sda4 during installation</span></div><div class="line"><span class="comment">#UUID=f5671da1-9906-4b4c-9613-6e84f9001fa9 none            swap    sw                0       0</span></div></pre></td></tr></table></figure>
 <p>修改完成后保存，然后重启：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo reboot</div></pre></td></tr></table></figure>
 <p>如果恢复快速启动，则问题锁定，可以在重启后使用GParted等工具查看最新的swap分区的UUID，修改到/etc/fstab中去。再次启动后通过系统监视器查看交换分区加载情况即可。</p>
-<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>重装Ubuntu是一件比较蛋疼的事，软件环境配置不像Windows那样可以ghost。如果这种方法可以解决你的问题那就不必费劲重装、重新构建环境了。  </p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>重装Ubuntu是一件比较蛋疼的事，软件环境配置不像Windows那样可以ghost。如果这种方法可以解决你的问题那就不必费劲重装、重新构建环境了。</p>
 <p>谢谢观看！</p>
 
       

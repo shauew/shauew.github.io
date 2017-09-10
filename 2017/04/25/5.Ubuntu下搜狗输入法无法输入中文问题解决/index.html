@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="Ubuntu搜狗输入法问题">
+<meta name="description" content="系统及软件信息系统版本：ubuntu 17.04 LTS搜狗版本：sogoupinyin_2.1.0.0082_amd64fcitx版本：4.2.9.1">
 <meta name="keywords" content="Ubuntu">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Ubuntu下搜狗输入法无法输入中文解决">
+<meta property="og:title" content="Ubuntu 下搜狗输入法无法输入中文解决">
 <meta property="og:url" content="http://yoursite.com/2017/04/25/5.Ubuntu下搜狗输入法无法输入中文问题解决/index.html">
 <meta property="og:site_name" content="潇湘夜雨">
-<meta property="og:description" content="Ubuntu搜狗输入法问题">
+<meta property="og:description" content="系统及软件信息系统版本：ubuntu 17.04 LTS搜狗版本：sogoupinyin_2.1.0.0082_amd64fcitx版本：4.2.9.1">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-07T15:49:19.954Z">
+<meta property="og:updated_time" content="2017-09-10T16:58:06.082Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ubuntu下搜狗输入法无法输入中文解决">
-<meta name="twitter:description" content="Ubuntu搜狗输入法问题">
+<meta name="twitter:title" content="Ubuntu 下搜狗输入法无法输入中文解决">
+<meta name="twitter:description" content="系统及软件信息系统版本：ubuntu 17.04 LTS搜狗版本：sogoupinyin_2.1.0.0082_amd64fcitx版本：4.2.9.1">
 
 
 
@@ -142,7 +142,7 @@
 
 
 
-  <title>Ubuntu下搜狗输入法无法输入中文解决 | 潇湘夜雨</title>
+  <title>Ubuntu 下搜狗输入法无法输入中文解决 | 潇湘夜雨</title>
   
 
 
@@ -345,7 +345,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Ubuntu下搜狗输入法无法输入中文解决</h1>
+          <h1 class="post-title" itemprop="name headline">Ubuntu 下搜狗输入法无法输入中文解决</h1>
         
 
         <div class="post-meta">
@@ -397,7 +397,7 @@
 
           
           
-             <span id="/2017/04/25/5.Ubuntu下搜狗输入法无法输入中文问题解决/" class="leancloud_visitors" data-flag-title="Ubuntu下搜狗输入法无法输入中文解决">
+             <span id="/2017/04/25/5.Ubuntu下搜狗输入法无法输入中文问题解决/" class="leancloud_visitors" data-flag-title="Ubuntu 下搜狗输入法无法输入中文解决">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -414,10 +414,6 @@
           
 
           
-              <div class="post-description">
-                  Ubuntu搜狗输入法问题
-              </div>
-          
 
         </div>
       </header>
@@ -433,9 +429,10 @@
 
       
         <h2 id="系统及软件信息"><a href="#系统及软件信息" class="headerlink" title="系统及软件信息"></a>系统及软件信息</h2><p>系统版本：ubuntu 17.04 LTS<br>搜狗版本：sogoupinyin_2.1.0.0082_amd64<br>fcitx版本：4.2.9.1</p>
-<h2 id="一：重启搜狗输入法"><a href="#一：重启搜狗输入法" class="headerlink" title="一：重启搜狗输入法"></a>一：重启搜狗输入法</h2><p>通过下面的两个命令重启搜狗输入法，看重启后是否可以正常使用：  </p>
+<a id="more"></a>
+<h2 id="一：重启搜狗输入法"><a href="#一：重启搜狗输入法" class="headerlink" title="一：重启搜狗输入法"></a>一：重启搜狗输入法</h2><p>通过下面的两个命令重启搜狗输入法，看重启后是否可以正常使用：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">~$ killall fcitx</div><div class="line">~$ killall sogou-qinpanel</div></pre></td></tr></table></figure>
-<h2 id="二：检查修复安装依赖"><a href="#二：检查修复安装依赖" class="headerlink" title="二：检查修复安装依赖"></a>二：检查修复安装依赖</h2><p>因为我之前是可以正常使用的，所以应该不是安装依赖的问题。刚安装好的朋友如果无法使用，可以用下面的命令排除或修复安装依赖问题  </p>
+<h2 id="二：检查修复安装依赖"><a href="#二：检查修复安装依赖" class="headerlink" title="二：检查修复安装依赖"></a>二：检查修复安装依赖</h2><p>因为我之前是可以正常使用的，所以应该不是安装依赖的问题。刚安装好的朋友如果无法使用，可以用下面的命令排除或修复安装依赖问题</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~$ sudo apt-get install -f</div></pre></td></tr></table></figure>
 <h2 id="三：删除配置文件，重启搜狗"><a href="#三：删除配置文件，重启搜狗" class="headerlink" title="三：删除配置文件，重启搜狗"></a>三：删除配置文件，重启搜狗</h2><p>ubuntu下搜狗的配置文件在 ~/.config下的3个文件夹里：<br>SogouPY、SogouPY.users、sogou-qimpanel<br>删除这3个文件夹，然后重启搜狗。<br><strong>我使用这种方法后解决了无法输入中文问题。</strong></p>
 <h2 id="谢谢观看！"><a href="#谢谢观看！" class="headerlink" title="谢谢观看！"></a>谢谢观看！</h2>

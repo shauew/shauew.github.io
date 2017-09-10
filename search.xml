@@ -1,544 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-    
-    <entry>
-      <title><![CDATA[Hexo添加评论及打赏功能]]></title>
-      <url>/2017/09/10/14.Hexo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8F%8A%E6%89%93%E8%B5%8F%E5%8A%9F%E8%83%BD/</url>
-      <content type="html"><![CDATA[<h1 id="添加友言评论功能"><a href="#添加友言评论功能" class="headerlink" title="添加友言评论功能"></a>添加友言评论功能</h1><ol>
-<li><p>注册友言</p>
-<p> 打开<a href="http://www.uyan.cc/" target="_blank" rel="external">友言</a>官网，单击“注册”按钮后注册</p>
-</li>
-<li><p>获取uid</p>
-<p> 单击“后台管理”获取ID</p>
-</li>
-</ol>
-<a id="more"></a>
-<ol>
-<li><p>配置友言</p>
-<p> 编辑主题配置文件，插入uid</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Support for youyan comments system.</span></div><div class="line"><span class="comment"># You can get your uid from http://www.uyan.cc</span></div><div class="line"><span class="comment"># youyan_uid: your uid</span></div></pre></td></tr></table></figure>
-<p> 编辑站点配置文件，添加以下内容</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Support for youyan comments system.</span></div><div class="line"><span class="comment"># You can get your uid from http://www.uyan.cc</span></div><div class="line">youyan_uid: xxxxx</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h1 id="添加打赏功能"><a href="#添加打赏功能" class="headerlink" title="添加打赏功能"></a>添加打赏功能</h1><ol>
-<li><p>获取微信收款二维码及支付宝收款二维码</p>
-<p> 请自行百度吧</p>
-</li>
-<li><p>将二维码图片放到<em><strong>主题根目录/source/images/</strong></em>文件夹</p>
-<p> 尽量使用英文</p>
-</li>
-<li><p>开启打赏功能</p>
-<p> 找到主题配置文件，在其最后添加打赏的配置信息</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Reward</span></div><div class="line"><span class="comment">#reward_comment: Donate comment here</span></div><div class="line"><span class="comment">#wechatpay: /images/wechatpay.jpg</span></div><div class="line"><span class="comment">#alipay: /images/alipay.jpg</span></div><div class="line"><span class="comment">#bitcoin: /images/bitcoin.png</span></div></pre></td></tr></table></figure>
-<p> 去掉微信支付及阿里支付前的注释符号，并将后面的图片换成自己的图片名</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">reward_comment: 打赏请看这儿</div><div class="line">wechatpay: /images/weixinsoukuan_20170910223421.jpg</div><div class="line">alipay: /images/zhifubaoshoukuan_20170910223530.jpg</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h1 id="谢谢观看！"><a href="#谢谢观看！" class="headerlink" title="谢谢观看！"></a>谢谢观看！</h1>]]></content>
-      
-        <categories>
-            
-            <category> Hexo学习 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Hexo添加本地搜索功能]]></title>
-      <url>/2017/09/09/13.Hexo%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</url>
-      <content type="html"><![CDATA[<ol>
-<li><p>安装 hexo-generator-search：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-generator-search --save</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<a id="more"></a>
-<ol>
-<li><p>安装 hexo-generator-searchdb：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-generator-searchdb --save</div></pre></td></tr></table></figure>
-</li>
-<li><p>启动搜索：</p>
-<p> 编辑主题配置文件，启动本地搜索功能</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">local_search:</div><div class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></div></pre></td></tr></table></figure>
-<p> 编辑站点配置文件，添加以下内容</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">search:</div><div class="line">  path: search.xml</div><div class="line">  field: post</div><div class="line">  format: html</div><div class="line">  <span class="built_in">limit</span>: 10000</div></pre></td></tr></table></figure>
-</li>
-<li><p>谢谢观看！</p>
-</li>
-</ol>
-]]></content>
-      
-        <categories>
-            
-            <category> Hexo学习 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[GIT warning LF will be replaced by CRLF 解决方法]]></title>
-      <url>/2017/09/09/12.GIT%20warning%20LF%20will%20be%20replaced%20by%20CRLF/</url>
-      <content type="html"><![CDATA[<ol>
-<li><p>问题描述：</p>
-<p> 使用Hexo部署静态页到GIthub上的时候提示</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Warning: LF will be replaced by CRLF</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<a id="more"></a>
-<ol>
-<li><p>问题解析：</p>
-<p> CR – Carriage-Return 回车(CR, ASCII 13, \r)<br> LF – Line-Feed       换行(LF, ASCII 10, \n)</p>
-<p> 在Windows中广泛使用回车换行来标识一行的结束（CRLF），而在Linux/UNIX系统中只有换行符（LF），但两个ACSII字符不会在屏幕有任何输出。</p>
-</li>
-<li><p>解决方案：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git config --gobal core.autocrlf <span class="literal">false</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>谢谢观看！</p>
-</li>
-</ol>
-]]></content>
-      
-        <categories>
-            
-            <category> Git学习 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Git </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Hexo去掉底部强力驱动及主题字样]]></title>
-      <url>/2017/09/08/11.Hexo%E5%8E%BB%E6%8E%89%E5%BA%95%E9%83%A8%E5%BC%BA%E5%8A%9B%E9%A9%B1%E5%8A%A8%E5%8F%8A%E4%B8%BB%E9%A2%98%E5%AD%97%E6%A0%B7/</url>
-      <content type="html"><![CDATA[<ol>
-<li><p>找到 \themes\next\layout_partials\下面的footer.swig文件，打开：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;div class=<span class="string">"powered-by"</span>&gt;</div><div class="line">  &#123;&#123; __(<span class="string">'footer.powered'</span>, <span class="string">'&lt;a class="theme-link" href="https://hexo.io"&gt;Hexo&lt;/a&gt;'</span>) &#125;&#125;</div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;div class=<span class="string">"theme-info"</span>&gt;</div><div class="line">  &#123;&#123; __(<span class="string">'footer.theme'</span>) &#125;&#125; -</div><div class="line">  &lt;a class=<span class="string">"theme-link"</span> href=<span class="string">"https://github.com/iissnan/hexo-theme-next"</span>&gt;</div><div class="line">    NexT.&#123;&#123; theme.scheme &#125;&#125;</div><div class="line">  &lt;/a&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
-<p> 第一条是“由Hexo驱动” 的Hexo链接，把xml段删除，只留两个单引号’’。</p>
-<p> 第二条是“主题-Next.XX”，将xml段都删掉，不留引号。</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;div class=<span class="string">"powered-by"</span>&gt;</div><div class="line">  &#123;&#123; __(<span class="string">'footer.powered'</span>, <span class="string">''</span>) &#125;&#125;</div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;div class=<span class="string">"theme-info"</span>&gt;</div><div class="line">  &#123;&#123; __(<span class="string">'footer.theme'</span>) &#125;&#125;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
-</li>
-<li><p>找到这个地方\themes\next\languages\ 下面的语言文件zh-Hans.yml（以中文为例）：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">footer:</div><div class="line">  powered: <span class="string">"由 %s 强力驱动"</span></div><div class="line">  theme: 主题</div></pre></td></tr></table></figure>
-<p> 将上面的文字改成自己想要的即可。</p>
-</li>
-<li><p>谢谢观看！</p>
-</li>
-</ol>
-]]></content>
-      
-        <categories>
-            
-            <category> Hexo学习 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Hexo新建分类页]]></title>
-      <url>/2017/09/08/10.Hexo%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E9%A1%B5/</url>
-      <content type="html"><![CDATA[<ol>
-<li><p>新建一个页面，命名为categories。</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new page categories</div></pre></td></tr></table></figure>
-</li>
-<li><p>编辑刚新建的页面，将页面的类型设置为categories。</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: 分类</div><div class="line">date: 2014-12-22 12:39:04</div><div class="line"><span class="built_in">type</span>: <span class="string">"categories"</span></div><div class="line">---</div></pre></td></tr></table></figure>
-</li>
-<li><p>编辑主题的_config.yml，将menu中的categories: /categories注释去掉。</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">menu:</div><div class="line">  home: /</div><div class="line">  categories: /categories</div><div class="line">  archives: /archives</div><div class="line">  tags: /tags</div></pre></td></tr></table></figure>
-</li>
-<li><p>谢谢观看！</p>
-</li>
-</ol>
-]]></content>
-      
-        <categories>
-            
-            <category> Hexo学习 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Windows 下 Hexo环境的搭建]]></title>
-      <url>/2017/09/08/9.Windows%E4%B8%8BHexo%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
-      <content type="html"><![CDATA[<ol>
-<li><p>到 <a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a> 下载最新的Node并安装，目前是v8.4.0。</p>
-</li>
-<li><p>执行以下命令安装hexo。</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 安装hexo</span></div><div class="line">npm install hexo-cli g</div><div class="line"></div><div class="line"><span class="comment"># 初始化博客文件夹</span></div><div class="line">hexo init Hexo</div><div class="line"></div><div class="line"><span class="comment"># 切换到该路径</span></div><div class="line"><span class="built_in">cd</span> Hexo</div><div class="line"></div><div class="line"><span class="comment"># 安装hexo的扩展插件</span></div><div class="line">npm install</div><div class="line"></div><div class="line"><span class="comment"># 安装其它插件</span></div><div class="line">npm install hexo-server --save</div><div class="line">npm install hexo-admin --save</div><div class="line">npm install hexo-generator-archive --save</div><div class="line">npm install hexo-generator-feed --save</div><div class="line">npm install hexo-generator-search --save</div><div class="line">npm install hexo-generator-tag --save</div><div class="line">npm install hexo-deployer-git --save</div><div class="line">npm install hexo-generator-sitemap --save</div></pre></td></tr></table></figure>
-</li>
-<li><p>生成测试界面    </p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g</div></pre></td></tr></table></figure>
-</li>
-<li><p>本地调试    </p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure>
-<p> 浏览器输入 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 就能看到标准的 hello hexo 啦。</p>
-</li>
-<li><p>常用指令</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">hexo clean                  <span class="comment"># 清理</span></div><div class="line">hexo new <span class="string">"postName"</span>         <span class="comment"># 新建文章</span></div><div class="line">hexo new page <span class="string">"pageName"</span>    <span class="comment"># 新建页面</span></div><div class="line">hexo generate               <span class="comment"># 生成静态页面至public目录</span></div><div class="line">hexo server                 <span class="comment"># 开启预览访问端口（默认端口4000，'ctrl + c'关闭server）</span></div><div class="line">hexo deploy                 <span class="comment"># 将.deploy目录部署到GitHub</span></div><div class="line">hexo <span class="built_in">help</span>                   <span class="comment"># 查看帮助</span></div><div class="line">hexo version                <span class="comment"># 查看Hexo的版本</span></div><div class="line">hexo clean &amp;&amp; hexo g -s     <span class="comment"># 清除、生成、启动</span></div><div class="line">hexo clean &amp;&amp; hexo g -d     <span class="comment"># 清除、生成、部署</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>博文</p>
-<p>  文章在source/_posts下，推荐使用MD；博客的标题等常规参数在_config.yml文件中修改；主题推荐Next。</p>
-</li>
-<li><p>ps</p>
-<p> 建议把整个博客目录上传到github上面，便于更换电脑时方便同步（如Windows与Ubuntu之间的同步）。</p>
-</li>
-<li><p>谢谢观看！</p>
-</li>
-</ol>
-]]></content>
-      
-        <categories>
-            
-            <category> Hexo学习 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Ubuntu下嵌入式开发环境的搭建]]></title>
-      <url>/2017/05/09/8.Ubuntu%E4%B8%8B%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E6%90%AD%E5%BB%BA/</url>
-      <content type="html"><![CDATA[<h2 id="系统及软件信息"><a href="#系统及软件信息" class="headerlink" title="系统及软件信息"></a>系统及软件信息</h2><p>系统版本：ubuntu 17.04 LTS  </p>
-<h2 id="一：安装linux下的JLink驱动"><a href="#一：安装linux下的JLink驱动" class="headerlink" title="一：安装linux下的JLink驱动"></a>一：安装linux下的JLink驱动</h2><p>JLink驱动下载<a href="http://www.segger.com/cms/jlink-software.html，我下载的版本是JLink_Linux_V614f_x86_64.tgz。按照里面的readme说明操作，同时推荐将解压出来的文件夹拷贝到opt/下，便于统一管理。" target="_blank" rel="external">http://www.segger.com/cms/jlink-software.html，我下载的版本是JLink_Linux_V614f_x86_64.tgz。按照里面的readme说明操作，同时推荐将解压出来的文件夹拷贝到opt/下，便于统一管理。</a><br><strong>PS.虽然官网上可以下载到deb包，但是当前系统版本不支持安装，所以用tgz了。</strong></p>
-<h2 id="二：安装java并配置环境变量"><a href="#二：安装java并配置环境变量" class="headerlink" title="二：安装java并配置环境变量"></a>二：安装java并配置环境变量</h2><p>不赘述。  </p>
-<h2 id="三：安装-Eclipse-IDE-for-C-C-Developers-环境"><a href="#三：安装-Eclipse-IDE-for-C-C-Developers-环境" class="headerlink" title="三：安装 Eclipse IDE for C/C++ Developers 环境"></a>三：安装 Eclipse IDE for C/C++ Developers 环境</h2><p>不赘述。</p>
-<h2 id="四：安装-GUN-ARM-插件"><a href="#四：安装-GUN-ARM-插件" class="headerlink" title="四：安装 GUN ARM 插件"></a>四：安装 GUN ARM 插件</h2><p>安装eclipse后点击 HELP -&gt; eclipse marketpalce，在find 里输入 ARM 我们会看到GNU ARM Eclipse 3.4.1(插件的版本号可能不一样)，点击“install”即可安装。<br>之后在 HELP -&gt; install new software 中输入 GNU ARM Eclipse Plug-ins - <a href="http://gnuarmeclipse.sourceforge.NET/updates" target="_blank" rel="external">http://gnuarmeclipse.sourceforge.NET/updates</a> 安装调试工具（JLink/OpenOCD等），建议全部安装。    </p>
-<h2 id="五：新建工程"><a href="#五：新建工程" class="headerlink" title="五：新建工程"></a>五：新建工程</h2><p>建立一个STM32fXX的工程，一直点击下一步，只需要设置编译器的位置。ARM官网 <a href="https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads" target="_blank" rel="external">https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads</a> 下载 gcc-arm-none-eabi-6-2017-q1-update-linux.tar.bz2，然后解压，设置好编译器的路径，如果编译工具链无误的话能顺利编译成功。<br><strong>PS.此处建议参考我的另一篇文章：Ubuntu 16.04 下 arm-none-linux-gnueabi 的安装。</strong></p>
-<h2 id="六：调试配置"><a href="#六：调试配置" class="headerlink" title="六：调试配置"></a>六：调试配置</h2><p>首先在eclipse全局属性里设置JLinkGDBServer的路径，然后Debug Configurations -&gt; GDB SEGGER J-Link Debug -&gt; Debugger 选择好合适的设备，此处我们选择 STM32F103ZE，横选项startup栏目下输入下面的设置：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Enable flash download and flash breakpoints.</span></div><div class="line"><span class="comment"># Flash download and flash breakpoints are features of</span></div><div class="line"><span class="comment"># the J-Link software which require separate licenses</span></div><div class="line"><span class="comment"># from SEGGER.</span></div><div class="line"><span class="comment"># Select flash device</span></div><div class="line">    monitor flash device = STM32F103ZE</div><div class="line"><span class="comment"># Enable FlashDL and FlashBPs</span></div><div class="line">    monitor flash download = 1</div><div class="line">    monitor flash breakpoints = 1</div><div class="line"><span class="comment"># Clear all pendig breakpoints</span></div><div class="line">    monitor clrbp</div><div class="line"><span class="comment"># Set gdb server to little endian</span></div><div class="line">    monitor endian little</div><div class="line"><span class="comment"># Set JTAG speed to 5 kHz</span></div><div class="line">    monitor speed 5</div><div class="line"><span class="comment"># Reset the target</span></div><div class="line">    monitor reset</div><div class="line">    monitor sleep 100</div><div class="line"><span class="comment"># Set JTAG speed in khz</span></div><div class="line">    monitor speed auto</div><div class="line"><span class="comment"># Vector table placed in Flash</span></div><div class="line">    monitor writeu32 0xE000ED08 = 0x00000000</div></pre></td></tr></table></figure>
-<p>通过JLINK连接STM32开发板，之后开始愉快的Debug。</p>
-<h2 id="谢谢观看！"><a href="#谢谢观看！" class="headerlink" title="谢谢观看！"></a>谢谢观看！</h2>]]></content>
-      
-        <categories>
-            
-            <category> Ubuntu学习 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Ubuntu </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Git的免输入密码推送拉取]]></title>
-      <url>/2017/04/27/7.Git%E7%9A%84%E5%85%8D%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81%E6%8E%A8%E9%80%81%E6%8B%89%E5%8F%96/</url>
-      <content type="html"><![CDATA[<h2 id="1-RSA-key-免密操作"><a href="#1-RSA-key-免密操作" class="headerlink" title="1. RSA key 免密操作"></a>1. RSA key 免密操作</h2><p>首先配置你的git用户名及邮箱，并生成rsa key：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name <span class="string">"你的名字"</span></div><div class="line">$ git config --global user.email <span class="string">"你的邮箱"</span></div><div class="line">$ ssh-keygen -t rsa -C <span class="string">"你的邮箱"</span></div></pre></td></tr></table></figure>
-<p>之后，在 <strong>~/.ssh/</strong> 下找到公钥 id_rsa_pub 。然后登录你的代码托管工具，如github、git@osc、coding等，将该公钥一字不差地配置到ssh中，之后使用 <strong>ssh url</strong> 克隆项目，后续的推拉就不需要输入用户名及密码了。</p>
-<h2 id="2-配置credential-helper"><a href="#2-配置credential-helper" class="headerlink" title="2. 配置credential helper"></a>2. 配置credential helper</h2><p>有时我们会使用  <strong>http url</strong> 来克隆代码，这种方式相对宽松些，不需要配置本地 ssh，但需要在每次同步操作输入用户名和密码。通过  <strong>credential helper</strong> 可以帮我们存储凭证（即用户名和密码)，只需要在第一次clone输入用户名和密码，之后就可以自动读取，不需要再手动输入了。</p>
-<p>使用下面的指令来进行配置：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git config --global credential.helper store</div></pre></td></tr></table></figure></p>
-<h2 id="3-将-http-url-修改为-ssh-url"><a href="#3-将-http-url-修改为-ssh-url" class="headerlink" title="3. 将 http url 修改为 ssh url"></a>3. 将 http url 修改为 ssh url</h2><p>有的时候我们需要将 <strong>http url</strong> 更改为 <strong>ssh url</strong> （由于我们配置了rsa key但是使用了http url导致需要输入密码），这时候很多同学的做法是在另一个目录下使用 <strong>ssh url</strong> 重新clone一份，累死人不偿命。其实解决方案很简单，在你的 repo 的目录下，输入：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> .git</div><div class="line">$ gedit config</div></pre></td></tr></table></figure>
-<p>然后将 [remote “origin”] 标签下的 url 值改为 <strong>ssh url</strong> 的值就好了：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">url = git@github.com:[your_id]/[repo_name].git</div></pre></td></tr></table></figure>
-<h2 id="谢谢观看！"><a href="#谢谢观看！" class="headerlink" title="谢谢观看！"></a>谢谢观看！</h2>]]></content>
-      
-        <categories>
-            
-            <category> Git学习 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Git </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[部署Hexo到git@osc上]]></title>
-      <url>/2017/04/27/6.%E9%83%A8%E7%BD%B2Hexo%E5%88%B0git@osc%E4%B8%8A/</url>
-      <content type="html"><![CDATA[<h2 id="1-准备"><a href="#1-准备" class="headerlink" title="1. 准备"></a>1. 准备</h2><p>如果你使用过 <strong>Github Pages</strong> ，那么上手使用码云的Pages服务会很轻松。使用码云上的Pages相较于Github Pages，访问速度会更快，毕竟是在国内，木有梯子的话，你懂的。关于Hexo的基本操作及环境准备请参考我的博文《Ubuntu 16.04 下 Hexo环境的搭建》及《部署Hexo到github上》。</p>
-<h2 id="2-注册"><a href="#2-注册" class="headerlink" title="2. 注册"></a>2. 注册</h2><p>登录 <a href="https://git.oschina.net/" target="_blank" rel="external">https://git.oschina.net/</a> 注册账号，并创建一个仓库，仓库名不限制。但如果你想以根目录的形式访问自己的静态网站，需要建立一个与自己个性地址同名的项目，如 <a href="http://git.oschina.net/shauew" target="_blank" rel="external">http://git.oschina.net/shauew</a> 这个用户，想要创建一个自己的站点，但不想以子目录的方式访问，想以 shauew.oschina.io 直接访问，那么他需要创建一个名字为shauew的项目 <a href="http://git.oschina.net/shauew/shauew" target="_blank" rel="external">http://git.oschina.net/shauew/shauew</a> 。部署完成后，就可以通过 <a href="http://shauew.oschina.io" target="_blank" rel="external">http://shauew.oschina.io</a> 进行访问了。</p>
-<h2 id="3-部署"><a href="#3-部署" class="headerlink" title="3. 部署"></a>3. 部署</h2><p>这里的部署与github上一致，唯一的区别只是部署的地址不一样。</p>
-<p>修改根目录下的_config.yml中的仓库地址：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line"><span class="built_in">type</span>: git</div><div class="line">repository: <span class="comment">#这里设置git@osc资源库的ssh地址（ssh地址添加ras公钥后可以免密）</span></div><div class="line">branch: master</div></pre></td></tr></table></figure>
-<p><strong>注意：这里的设置冒号后面必须有空格。</strong>   </p>
-<p>然后执行如下命令进行部署：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line">hexo deploy     <span class="comment">#上述两条指令等价于 hexo deploy -g</span></div></pre></td></tr></table></figure>
-<h2 id="4-启动"><a href="#4-启动" class="headerlink" title="4. 启动"></a>4. 启动</h2><p>进入上面新建的仓库，可以看到我们部署的静态页已经推送上来了。点击服务下拉Pages，下拉进入，再点击启动服务完成部署。之后使用我们的个性域名 shauew.oschina.io 就可以访问到这个门户啦。<strong>遗憾的是git@osc的Pages不像github那样可以支持域名绑定，目前只能通过oschina来访问。</strong></p>
-<h2 id="谢谢观看！"><a href="#谢谢观看！" class="headerlink" title="谢谢观看！"></a>谢谢观看！</h2><p><strong>ps.可以将之前部署到github上的主页完全克隆过来，之后只要在仓库里启动Pages服务就可以使用门户进行访问了（当github上的内容更新之后，需要在码云上强制同步）。</strong></p>
-]]></content>
-      
-        <categories>
-            
-            <category> Hexo学习 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Ubuntu下搜狗输入法无法输入中文解决]]></title>
-      <url>/2017/04/25/5.Ubuntu%E4%B8%8B%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95%E6%97%A0%E6%B3%95%E8%BE%93%E5%85%A5%E4%B8%AD%E6%96%87%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</url>
-      <content type="html"><![CDATA[<h2 id="系统及软件信息"><a href="#系统及软件信息" class="headerlink" title="系统及软件信息"></a>系统及软件信息</h2><p>系统版本：ubuntu 17.04 LTS<br>搜狗版本：sogoupinyin_2.1.0.0082_amd64<br>fcitx版本：4.2.9.1</p>
-<h2 id="一：重启搜狗输入法"><a href="#一：重启搜狗输入法" class="headerlink" title="一：重启搜狗输入法"></a>一：重启搜狗输入法</h2><p>通过下面的两个命令重启搜狗输入法，看重启后是否可以正常使用：  </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">~$ killall fcitx</div><div class="line">~$ killall sogou-qinpanel</div></pre></td></tr></table></figure>
-<h2 id="二：检查修复安装依赖"><a href="#二：检查修复安装依赖" class="headerlink" title="二：检查修复安装依赖"></a>二：检查修复安装依赖</h2><p>因为我之前是可以正常使用的，所以应该不是安装依赖的问题。刚安装好的朋友如果无法使用，可以用下面的命令排除或修复安装依赖问题  </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~$ sudo apt-get install -f</div></pre></td></tr></table></figure>
-<h2 id="三：删除配置文件，重启搜狗"><a href="#三：删除配置文件，重启搜狗" class="headerlink" title="三：删除配置文件，重启搜狗"></a>三：删除配置文件，重启搜狗</h2><p>ubuntu下搜狗的配置文件在 ~/.config下的3个文件夹里：<br>SogouPY、SogouPY.users、sogou-qimpanel<br>删除这3个文件夹，然后重启搜狗。<br><strong>我使用这种方法后解决了无法输入中文问题。</strong></p>
-<h2 id="谢谢观看！"><a href="#谢谢观看！" class="headerlink" title="谢谢观看！"></a>谢谢观看！</h2>]]></content>
-      
-        <categories>
-            
-            <category> Ubuntu学习 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Ubuntu </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Hexo添加归档、标签等页面]]></title>
-      <url>/2017/04/25/4.Hexo%E6%B7%BB%E5%8A%A0%E5%BD%92%E6%A1%A3%E3%80%81%E6%A0%87%E7%AD%BE%E7%AD%89%E9%A1%B5%E9%9D%A2/</url>
-      <content type="html"><![CDATA[<ol>
-<li><p>首先我们使用的是NexT主题，其他主题也可以参考该操作</p>
-</li>
-<li><p>在/Hexo/themes/next路径下找到_config.yml文件</p>
-</li>
-<li><p>使用文本编辑软件打开该文件</p>
-<pre><code class="bash">menu:
-  home: /
-  <span class="comment">#categories: /categories</span>
-  <span class="comment">#about: /about</span>
-  <span class="comment">#archives: /archives</span>
-  tags: /tags    //确保标签页已打开
-  <span class="comment">#schedule: /schedule     </span>
-  <span class="comment">#commonweal: /404.html</span>
-</code></pre>
-<p> 将欲打开的页面前的#号干掉，使用 <strong>hexo server</strong> 调试可以看到对应页面打开了，但单击出现<strong>Cannot GET /categories/</strong>，添加对应页面内容见下章</p>
-</li>
-<li><p>谢谢观看！</p>
-</li>
-</ol>
-]]></content>
-      
-        <categories>
-            
-            <category> Hexo学习 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[部署Hexo到github上]]></title>
-      <url>/2017/03/30/3.%E9%83%A8%E7%BD%B2Hexo%E5%88%B0github%E4%B8%8A/</url>
-      <content type="html"><![CDATA[<ol>
-<li><p>安装git</p>
-</li>
-<li><p>创建github账户，假设账户为 xxxx</p>
-</li>
-<li><p>创建仓库，仓库的名称必须要注意：xxxx.github.io，其中xxxx为账户名</p>
-</li>
-<li><p>进行部署：</p>
-<p> 修改_config.yml文件:</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line"><span class="built_in">type</span>: git</div><div class="line">repository: 这里设置github资源库的ssh地址</div><div class="line">branch: master</div></pre></td></tr></table></figure>
-<p> 注意：这里的设置冒号后面必须有空格  </p>
-<p> 执行如下命令：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line">hexo deploy     <span class="comment">#上述两条指令等价于 hexo deploy -g</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>github门户地址</p>
-<p>  <a href="http://xxxx.github.io" target="_blank" rel="external">http://xxxx.github.io</a>    xxxx为账号名</p>
-</li>
-<li><p>谢谢观看！</p>
-</li>
-</ol>
-]]></content>
-      
-        <categories>
-            
-            <category> Hexo学习 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Ubuntu 16.04 下 Hexo环境的搭建]]></title>
-      <url>/2017/03/30/2.Hexo%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
-      <content type="html"><![CDATA[<ol>
-<li><p>到 <a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a> 下载最新的Node并安装，推荐v7.8.0。</p>
-</li>
-<li><p>安装Hexo。</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo npm install -g hexo</div></pre></td></tr></table></figure>
-</li>
-<li><p>初始化</p>
-<p> 创建一个文件夹，如：Hexo，cd到Hexo里执行hexo init的。命令：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure>
-</li>
-<li><p>生成初始界面    </p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g</div></pre></td></tr></table></figure>
-</li>
-<li><p>本地调试    </p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure>
-<p> 浏览器输入 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 就能看到标准的 hello hexo 啦。</p>
-</li>
-<li><p>常用指令</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">hexo clean                  <span class="comment">#清理</span></div><div class="line">hexo new <span class="string">"postName"</span>         <span class="comment">#新建文章</span></div><div class="line">hexo new page <span class="string">"pageName"</span>    <span class="comment">#新建页面</span></div><div class="line">hexo generate               <span class="comment">#生成静态页面至public目录</span></div><div class="line">hexo server                 <span class="comment">#开启预览访问端口（默认端口4000，'ctrl + c'关闭server）</span></div><div class="line">hexo deploy                 <span class="comment">#将.deploy目录部署到GitHub</span></div><div class="line">hexo <span class="built_in">help</span>                   <span class="comment">#查看帮助</span></div><div class="line">hexo version                <span class="comment">#查看Hexo的版本</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>ps</p>
-<p>  文章在source/_posts下，推荐使用MD；博客的标题等常规参数在_config.yml文件中修改；主题推荐Next。</p>
-</li>
-<li><p>谢谢观看！</p>
-</li>
-</ol>
-]]></content>
-      
-        <categories>
-            
-            <category> Hexo学习 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Ubuntu 16.04 下 arm-none-linux-gnueabi 的安装]]></title>
-      <url>/2017/03/15/1.Ubuntu16.04%E4%B8%8Barm-none-linux-gnueabi%E7%9A%84%E5%AE%89%E8%A3%85/</url>
-      <content type="html"><![CDATA[<p>1.先下载最新的安装包arm-2014.05-29-arm-none-Linux-gnueabi-i686-pc-linux-gnu.tar.bz2，推荐下载地址 <a href="http://pan.baidu.com/s/1mgyYfos。" target="_blank" rel="external">http://pan.baidu.com/s/1mgyYfos。</a></p>
-<p>2.拷贝至目标文件夹并解压缩，推荐如下路径<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ sudo cp arm-2014.05-29-arm-none-linux-gnueabi-i686-pc-linux-gnu.tar.bz2 /usr/<span class="built_in">local</span></div><div class="line">$ <span class="built_in">cd</span> /usr/<span class="built_in">local</span></div><div class="line">$ sudo tar -jxvf arm-2014.05-29-arm-none-linux-gnueabi-i686-pc-linux-gnu.tar.bz2</div></pre></td></tr></table></figure></p>
-<p>3.配置环境变量，使其生效<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo vim /etc/bash.bashrc</div></pre></td></tr></table></figure></p>
-<p>在最后添加<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">PATH=<span class="variable">$PATH</span>:/usr/<span class="built_in">local</span>/arm-2014.05/bin</div></pre></td></tr></table></figure></p>
-<p>:wq退出，source使其立即生效<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">source</span> /etc/bash.bashrc</div></pre></td></tr></table></figure></p>
-<p>4.输入arm-，按tab键会自动补齐arm-none-linux-gnueabi-，添加gcc -v并回车，如果有版本信息输出，则大功告成。</p>
-<p>5.如果出现 没有那个文件或目录 （no such file or ……）,则需要安装32位兼容包，键入下面的命令即可：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo apt-get install lib32ncurses5 lib32z1</div></pre></td></tr></table></figure></p>
-<p>谢谢观看！</p>
-]]></content>
-      
-        <categories>
-            
-            <category> Ubuntu学习 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Ubuntu </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Ubuntu启动时间过长解决（两分多钟）]]></title>
-      <url>/2017/03/13/0.Ubuntu%E5%90%AF%E5%8A%A8%E6%97%B6%E9%97%B4%E8%BF%87%E9%95%BF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
-      <content type="html"><![CDATA[<p>是不是会遇到这种情况，明明配置了SSD，且平时Windows下启动也很快。但是安装Ubuntu之后刚开始启动很快，使用一段后或是重置引导，或是Windows下磁盘分区、调整大小等操作后，发现Ubuntu启动奇慢？</p>
-<h2 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h2><p>在进行上述的磁盘操作后，可能导致Ubuntu下的盘符发生变化。可以通过grub修复或是EasyBCD修复后可以重新找回Ubuntu系统，但是此时swap分区的ID也发生变化了，而/etc/fstab文件夹中的交换分区的UUID并没有更新，所以启动时交换分区加载出错，导致启动时间变长。<br>（按理说Ubuntu启动应该比Windows快才读，何况是SSD，两分半钟是什么鬼？）</p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>如果内存够大（8G+），则可以尝试注释掉/etc/fstab中的swap分区，如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">$ sudo vim /etc/fstab</div><div class="line"></div><div class="line"><span class="comment"># /etc/fstab: static file system information.</span></div><div class="line"><span class="comment">#</span></div><div class="line"><span class="comment"># Use 'blkid' to print the universally unique identifier for a</span></div><div class="line"><span class="comment"># device; this may be used with UUID= as a more robust way to name devices</span></div><div class="line"><span class="comment"># that works even if disks are added and removed. See fstab(5).</span></div><div class="line"><span class="comment">#</span></div><div class="line"><span class="comment"># &lt;file system&gt; &lt;mount point&gt;   &lt;type&gt;  &lt;options&gt;       &lt;dump&gt;  &lt;pass&gt;</span></div><div class="line"><span class="comment"># / was on /dev/sda2 during installation</span></div><div class="line">UUID=850088d8-2274-4504-be9b-d4d5959a67a3 /               ext4    errors=remount-ro 0       1</div><div class="line"><span class="comment"># swap was on /dev/sda4 during installation</span></div><div class="line"><span class="comment">#UUID=f5671da1-9906-4b4c-9613-6e84f9001fa9 none            swap    sw                0       0</span></div></pre></td></tr></table></figure>
-<p>修改完成后保存，然后重启：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo reboot</div></pre></td></tr></table></figure>
-<p>如果恢复快速启动，则问题锁定，可以在重启后使用GParted等工具查看最新的swap分区的UUID，修改到/etc/fstab中去。再次启动后通过系统监视器查看交换分区加载情况即可。</p>
-<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>重装Ubuntu是一件比较蛋疼的事，软件环境配置不像Windows那样可以ghost。如果这种方法可以解决你的问题那就不必费劲重装、重新构建环境了。  </p>
-<p>谢谢观看！</p>
-]]></content>
-      
-        <categories>
-            
-            <category> Ubuntu学习 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Ubuntu </tag>
-            
-        </tags>
-        
-    </entry>
-    
-  
-  
+<search>
+  <entry>
+    <title><![CDATA[Hexo添加评论及打赏功能]]></title>
+    <url>%2F2017%2F09%2F10%2F14.Hexo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8F%8A%E6%89%93%E8%B5%8F%E5%8A%9F%E8%83%BD%2F</url>
+    <content type="text"><![CDATA[添加友言评论功能 注册友言 打开友言官网，单击“注册”按钮后注册 获取uid 单击“后台管理”获取ID 配置友言 编辑主题配置文件，插入uid 123# Support for youyan comments system.# You can get your uid from http://www.uyan.cc# youyan_uid: your uid 编辑站点配置文件，添加以下内容 123# Support for youyan comments system.# You can get your uid from http://www.uyan.ccyouyan_uid: xxxxx 添加打赏功能 获取微信收款二维码及支付宝收款二维码 请自行百度吧 将二维码图片放到主题根目录/source/images/文件夹 尽量使用英文 开启打赏功能 找到主题配置文件，在其最后添加打赏的配置信息 12345# Reward#reward_comment: Donate comment here#wechatpay: /images/wechatpay.jpg#alipay: /images/alipay.jpg#bitcoin: /images/bitcoin.png 去掉微信支付及阿里支付前的注释符号，并将后面的图片换成自己的图片名 123reward_comment: 打赏请看这儿wechatpay: /images/weixinsoukuan_20170910223421.jpgalipay: /images/zhifubaoshoukuan_20170910223530.jpg 谢谢观看！]]></content>
+      <categories>
+        <category>Hexo学习</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo添加本地搜索功能]]></title>
+    <url>%2F2017%2F09%2F09%2F13.Hexo%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD%2F</url>
+    <content type="text"><![CDATA[安装 hexo-generator-search： 1npm install hexo-generator-search --save 安装 hexo-generator-searchdb： 1npm install hexo-generator-searchdb --save 启动搜索： 编辑主题配置文件，启动本地搜索功能 12local_search: enable: true 编辑站点配置文件，添加以下内容 12345search: path: search.xml field: post format: html limit: 10000 谢谢观看！]]></content>
+      <categories>
+        <category>Hexo学习</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[GIT warning LF will be replaced by CRLF 解决方法]]></title>
+    <url>%2F2017%2F09%2F09%2F12.GIT%20warning%20LF%20will%20be%20replaced%20by%20CRLF%2F</url>
+    <content type="text"><![CDATA[问题描述： 使用Hexo部署静态页到GIthub上的时候提示 1Warning: LF will be replaced by CRLF 问题解析： CR – Carriage-Return 回车(CR, ASCII 13, \r) LF – Line-Feed 换行(LF, ASCII 10, \n) 在Windows中广泛使用回车换行来标识一行的结束（CRLF），而在Linux/UNIX系统中只有换行符（LF），但两个ACSII字符不会在屏幕有任何输出。 解决方案： 1git config --gobal core.autocrlf false 谢谢观看！]]></content>
+      <categories>
+        <category>Git学习</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo去掉底部强力驱动及主题字样]]></title>
+    <url>%2F2017%2F09%2F08%2F11.Hexo%E5%8E%BB%E6%8E%89%E5%BA%95%E9%83%A8%E5%BC%BA%E5%8A%9B%E9%A9%B1%E5%8A%A8%E5%8F%8A%E4%B8%BB%E9%A2%98%E5%AD%97%E6%A0%B7%2F</url>
+    <content type="text"><![CDATA[找到 \themes\next\layout_partials\下面的footer.swig文件，打开： 12345678910&lt;div class="powered-by"&gt; &#123;&#123; __('footer.powered', '&lt;a class="theme-link" href="https://hexo.io"&gt;Hexo&lt;/a&gt;') &#125;&#125;&lt;/div&gt;&lt;div class="theme-info"&gt; &#123;&#123; __('footer.theme') &#125;&#125; - &lt;a class="theme-link" href="https://github.com/iissnan/hexo-theme-next"&gt; NexT.&#123;&#123; theme.scheme &#125;&#125; &lt;/a&gt;&lt;/div&gt; 第一条是“由Hexo驱动” 的Hexo链接，把xml段删除，只留两个单引号&apos;&apos;。 第二条是“主题-Next.XX”，将xml段都删掉，不留引号。 1234567&lt;div class="powered-by"&gt; &#123;&#123; __('footer.powered', '') &#125;&#125;&lt;/div&gt;&lt;div class="theme-info"&gt; &#123;&#123; __('footer.theme') &#125;&#125;&lt;/div&gt; 找到这个地方\themes\next\languages\ 下面的语言文件zh-Hans.yml（以中文为例）： 123footer: powered: "由 %s 强力驱动" theme: 主题 将上面的文字改成自己想要的即可。 谢谢观看！]]></content>
+      <categories>
+        <category>Hexo学习</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo新建分类页]]></title>
+    <url>%2F2017%2F09%2F08%2F10.Hexo%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E9%A1%B5%2F</url>
+    <content type="text"><![CDATA[新建一个页面，命名为categories。 1hexo new page categories 编辑刚新建的页面，将页面的类型设置为categories。 12345---title: 分类date: 2014-12-22 12:39:04type: "categories"--- 编辑主题的_config.yml，将menu中的categories: /categories注释去掉。 12345menu: home: / categories: /categories archives: /archives tags: /tags 谢谢观看！]]></content>
+      <categories>
+        <category>Hexo学习</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Windows 下 Hexo环境的搭建]]></title>
+    <url>%2F2017%2F09%2F08%2F9.Windows%E4%B8%8BHexo%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%2F</url>
+    <content type="text"><![CDATA[到 https://nodejs.org/en/ 下载最新的Node并安装，目前是v8.4.0。 执行以下命令安装hexo。 123456789101112131415161718192021# 安装hexonpm install hexo-cli g# 初始化博客文件夹hexo init Hexo# 切换到该路径cd Hexo# 安装hexo的扩展插件npm install# 安装其它插件npm install hexo-server --savenpm install hexo-admin --savenpm install hexo-generator-archive --savenpm install hexo-generator-feed --savenpm install hexo-generator-search --savenpm install hexo-generator-tag --savenpm install hexo-deployer-git --savenpm install hexo-generator-sitemap --save 生成测试界面 1hexo g 本地调试 1hexo server 浏览器输入 http://localhost:4000 就能看到标准的 hello hexo 啦。 常用指令 12345678910hexo clean # 清理hexo new "postName" # 新建文章hexo new page "pageName" # 新建页面hexo generate # 生成静态页面至public目录hexo server # 开启预览访问端口（默认端口4000，'ctrl + c'关闭server）hexo deploy # 将.deploy目录部署到GitHubhexo help # 查看帮助hexo version # 查看Hexo的版本hexo clean &amp;&amp; hexo g -s # 清除、生成、启动hexo clean &amp;&amp; hexo g -d # 清除、生成、部署 博文 文章在source/_posts下，推荐使用MD；博客的标题等常规参数在_config.yml文件中修改；主题推荐Next。 ps 建议把整个博客目录上传到github上面，便于更换电脑时方便同步（如Windows与Ubuntu之间的同步）。 谢谢观看！]]></content>
+      <categories>
+        <category>Hexo学习</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Ubuntu下嵌入式开发环境的搭建]]></title>
+    <url>%2F2017%2F05%2F09%2F8.Ubuntu%E4%B8%8B%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E6%90%AD%E5%BB%BA%2F</url>
+    <content type="text"><![CDATA[系统及软件信息系统版本：ubuntu 17.04 LTS 一：安装linux下的JLink驱动JLink驱动下载http://www.segger.com/cms/jlink-software.html，我下载的版本是JLink_Linux_V614f_x86_64.tgz。按照里面的readme说明操作，同时推荐将解压出来的文件夹拷贝到opt/下，便于统一管理。PS.虽然官网上可以下载到deb包，但是当前系统版本不支持安装，所以用tgz了。 二：安装java并配置环境变量不赘述。 三：安装 Eclipse IDE for C/C++ Developers 环境不赘述。 四：安装 GUN ARM 插件安装eclipse后点击 HELP -&gt; eclipse marketpalce，在find 里输入 ARM 我们会看到GNU ARM Eclipse 3.4.1(插件的版本号可能不一样)，点击“install”即可安装。之后在 HELP -&gt; install new software 中输入 GNU ARM Eclipse Plug-ins - http://gnuarmeclipse.sourceforge.NET/updates 安装调试工具（JLink/OpenOCD等），建议全部安装。 五：新建工程建立一个STM32fXX的工程，一直点击下一步，只需要设置编译器的位置。ARM官网 https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads 下载 gcc-arm-none-eabi-6-2017-q1-update-linux.tar.bz2，然后解压，设置好编译器的路径，如果编译工具链无误的话能顺利编译成功。PS.此处建议参考我的另一篇文章：Ubuntu 16.04 下 arm-none-linux-gnueabi 的安装。 六：调试配置首先在eclipse全局属性里设置JLinkGDBServer的路径，然后Debug Configurations -&gt; GDB SEGGER J-Link Debug -&gt; Debugger 选择好合适的设备，此处我们选择 STM32F103ZE，横选项startup栏目下输入下面的设置： 12345678910111213141516171819202122# Enable flash download and flash breakpoints.# Flash download and flash breakpoints are features of# the J-Link software which require separate licenses# from SEGGER.# Select flash device monitor flash device = STM32F103ZE# Enable FlashDL and FlashBPs monitor flash download = 1 monitor flash breakpoints = 1# Clear all pendig breakpoints monitor clrbp# Set gdb server to little endian monitor endian little# Set JTAG speed to 5 kHz monitor speed 5# Reset the target monitor reset monitor sleep 100# Set JTAG speed in khz monitor speed auto# Vector table placed in Flash monitor writeu32 0xE000ED08 = 0x00000000 通过JLINK连接STM32开发板，之后开始愉快的Debug。 谢谢观看！]]></content>
+      <categories>
+        <category>Ubuntu学习</category>
+      </categories>
+      <tags>
+        <tag>Ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Git的免输入密码推送拉取]]></title>
+    <url>%2F2017%2F04%2F27%2F7.Git%E7%9A%84%E5%85%8D%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81%E6%8E%A8%E9%80%81%E6%8B%89%E5%8F%96%2F</url>
+    <content type="text"><![CDATA[1. RSA key 免密操作首先配置你的git用户名及邮箱，并生成rsa key： 123$ git config --global user.name "你的名字"$ git config --global user.email "你的邮箱"$ ssh-keygen -t rsa -C "你的邮箱" 之后，在 ~/.ssh/ 下找到公钥 id_rsa_pub 。然后登录你的代码托管工具，如github、git@osc、coding等，将该公钥一字不差地配置到ssh中，之后使用 ssh url 克隆项目，后续的推拉就不需要输入用户名及密码了。 2. 配置credential helper有时我们会使用 http url 来克隆代码，这种方式相对宽松些，不需要配置本地 ssh，但需要在每次同步操作输入用户名和密码。通过 credential helper 可以帮我们存储凭证（即用户名和密码)，只需要在第一次clone输入用户名和密码，之后就可以自动读取，不需要再手动输入了。 使用下面的指令来进行配置：1git config --global credential.helper store 3. 将 http url 修改为 ssh url有的时候我们需要将 http url 更改为 ssh url （由于我们配置了rsa key但是使用了http url导致需要输入密码），这时候很多同学的做法是在另一个目录下使用 ssh url 重新clone一份，累死人不偿命。其实解决方案很简单，在你的 repo 的目录下，输入： 12$ cd .git$ gedit config 然后将 [remote “origin”] 标签下的 url 值改为 ssh url 的值就好了： 1url = git@github.com:[your_id]/[repo_name].git 谢谢观看！]]></content>
+      <categories>
+        <category>Git学习</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[部署Hexo到git@osc上]]></title>
+    <url>%2F2017%2F04%2F27%2F6.%E9%83%A8%E7%BD%B2Hexo%E5%88%B0git%40osc%E4%B8%8A%2F</url>
+    <content type="text"><![CDATA[1. 准备如果你使用过 Github Pages ，那么上手使用码云的Pages服务会很轻松。使用码云上的Pages相较于Github Pages，访问速度会更快，毕竟是在国内，木有梯子的话，你懂的。关于Hexo的基本操作及环境准备请参考我的博文《Ubuntu 16.04 下 Hexo环境的搭建》及《部署Hexo到github上》。 2. 注册登录 https://git.oschina.net/ 注册账号，并创建一个仓库，仓库名不限制。但如果你想以根目录的形式访问自己的静态网站，需要建立一个与自己个性地址同名的项目，如 http://git.oschina.net/shauew 这个用户，想要创建一个自己的站点，但不想以子目录的方式访问，想以 shauew.oschina.io 直接访问，那么他需要创建一个名字为shauew的项目 http://git.oschina.net/shauew/shauew 。部署完成后，就可以通过 http://shauew.oschina.io 进行访问了。 3. 部署这里的部署与github上一致，唯一的区别只是部署的地址不一样。 修改根目录下的_config.yml中的仓库地址： 1234deploy:type: gitrepository: #这里设置git@osc资源库的ssh地址（ssh地址添加ras公钥后可以免密）branch: master 注意：这里的设置冒号后面必须有空格。 然后执行如下命令进行部署： 12hexo generatehexo deploy #上述两条指令等价于 hexo deploy -g 4. 启动进入上面新建的仓库，可以看到我们部署的静态页已经推送上来了。点击服务下拉Pages，下拉进入，再点击启动服务完成部署。之后使用我们的个性域名 shauew.oschina.io 就可以访问到这个门户啦。遗憾的是git@osc的Pages不像github那样可以支持域名绑定，目前只能通过oschina来访问。 谢谢观看！ps.可以将之前部署到github上的主页完全克隆过来，之后只要在仓库里启动Pages服务就可以使用门户进行访问了（当github上的内容更新之后，需要在码云上强制同步）。]]></content>
+      <categories>
+        <category>Hexo学习</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Ubuntu 下搜狗输入法无法输入中文解决]]></title>
+    <url>%2F2017%2F04%2F25%2F5.Ubuntu%E4%B8%8B%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95%E6%97%A0%E6%B3%95%E8%BE%93%E5%85%A5%E4%B8%AD%E6%96%87%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%2F</url>
+    <content type="text"><![CDATA[系统及软件信息系统版本：ubuntu 17.04 LTS搜狗版本：sogoupinyin_2.1.0.0082_amd64fcitx版本：4.2.9.1 一：重启搜狗输入法通过下面的两个命令重启搜狗输入法，看重启后是否可以正常使用： 12~$ killall fcitx~$ killall sogou-qinpanel 二：检查修复安装依赖因为我之前是可以正常使用的，所以应该不是安装依赖的问题。刚安装好的朋友如果无法使用，可以用下面的命令排除或修复安装依赖问题 1~$ sudo apt-get install -f 三：删除配置文件，重启搜狗ubuntu下搜狗的配置文件在 ~/.config下的3个文件夹里：SogouPY、SogouPY.users、sogou-qimpanel删除这3个文件夹，然后重启搜狗。我使用这种方法后解决了无法输入中文问题。 谢谢观看！]]></content>
+      <categories>
+        <category>Ubuntu学习</category>
+      </categories>
+      <tags>
+        <tag>Ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo添加归档、标签等页面]]></title>
+    <url>%2F2017%2F04%2F25%2F4.Hexo%E6%B7%BB%E5%8A%A0%E5%BD%92%E6%A1%A3%E3%80%81%E6%A0%87%E7%AD%BE%E7%AD%89%E9%A1%B5%E9%9D%A2%2F</url>
+    <content type="text"><![CDATA[首先我们使用的是NexT主题，其他主题也可以参考该操作 在/Hexo/themes/next路径下找到_config.yml文件 使用文本编辑软件打开该文件 12345678menu: home: / #categories: /categories #about: /about #archives: /archives tags: /tags //确保标签页已打开 #schedule: /schedule #commonweal: /404.html 将欲打开的页面前的#号干掉，使用 hexo server 调试可以看到对应页面打开了，但单击出现Cannot GET /categories/，添加对应页面内容见下章 谢谢观看！]]></content>
+      <categories>
+        <category>Hexo学习</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[部署Hexo到github上]]></title>
+    <url>%2F2017%2F03%2F30%2F3.%E9%83%A8%E7%BD%B2Hexo%E5%88%B0github%E4%B8%8A%2F</url>
+    <content type="text"><![CDATA[安装git 创建github账户，假设账户为 xxxx 创建仓库，仓库的名称必须要注意：xxxx.github.io，其中xxxx为账户名 进行部署： 修改_config.yml文件: 1234deploy:type: gitrepository: 这里设置github资源库的ssh地址branch: master 注意：这里的设置冒号后面必须有空格 执行如下命令： 12hexo generatehexo deploy #上述两条指令等价于 hexo deploy -g github门户地址 http://xxxx.github.io xxxx为账号名 谢谢观看！]]></content>
+      <categories>
+        <category>Hexo学习</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Ubuntu 16.04 下 Hexo环境的搭建]]></title>
+    <url>%2F2017%2F03%2F30%2F2.Hexo%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%2F</url>
+    <content type="text"><![CDATA[到 https://nodejs.org/en/ 下载最新的Node并安装，推荐v7.8.0。 安装Hexo。 1$ sudo npm install -g hexo 初始化 创建一个文件夹，如：Hexo，cd到Hexo里执行hexo init的。命令： 1hexo init 生成初始界面 1hexo g 本地调试 1hexo server 浏览器输入 http://localhost:4000 就能看到标准的 hello hexo 啦。 常用指令 12345678hexo clean #清理hexo new "postName" #新建文章hexo new page "pageName" #新建页面hexo generate #生成静态页面至public目录hexo server #开启预览访问端口（默认端口4000，'ctrl + c'关闭server）hexo deploy #将.deploy目录部署到GitHubhexo help #查看帮助hexo version #查看Hexo的版本 ps 文章在source/_posts下，推荐使用MD；博客的标题等常规参数在_config.yml文件中修改；主题推荐Next。 谢谢观看！]]></content>
+      <categories>
+        <category>Hexo学习</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Ubuntu 16.04 下 arm-none-linux-gnueabi 的安装]]></title>
+    <url>%2F2017%2F03%2F15%2F1.Ubuntu16.04%E4%B8%8Barm-none-linux-gnueabi%E7%9A%84%E5%AE%89%E8%A3%85%2F</url>
+    <content type="text"><![CDATA[1.先下载最新的安装包arm-2014.05-29-arm-none-Linux-gnueabi-i686-pc-linux-gnu.tar.bz2，推荐下载地址 http://pan.baidu.com/s/1mgyYfos。 2.拷贝至目标文件夹并解压缩，推荐如下路径123$ sudo cp arm-2014.05-29-arm-none-linux-gnueabi-i686-pc-linux-gnu.tar.bz2 /usr/local$ cd /usr/local$ sudo tar -jxvf arm-2014.05-29-arm-none-linux-gnueabi-i686-pc-linux-gnu.tar.bz2 3.配置环境变量，使其生效1$ sudo vim /etc/bash.bashrc 在最后添加1PATH=$PATH:/usr/local/arm-2014.05/bin :wq退出，source使其立即生效1$ source /etc/bash.bashrc 4.输入arm-，按tab键会自动补齐arm-none-linux-gnueabi-，添加gcc -v并回车，如果有版本信息输出，则大功告成。 5.如果出现 没有那个文件或目录 （no such file or ……）,则需要安装32位兼容包，键入下面的命令即可：1$ sudo apt-get install lib32ncurses5 lib32z1 谢谢观看！]]></content>
+      <categories>
+        <category>Ubuntu学习</category>
+      </categories>
+      <tags>
+        <tag>Ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Ubuntu启动时间过长解决（两分多钟）]]></title>
+    <url>%2F2017%2F03%2F13%2F0.Ubuntu%E5%90%AF%E5%8A%A8%E6%97%B6%E9%97%B4%E8%BF%87%E9%95%BF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%2F</url>
+    <content type="text"><![CDATA[是不是会遇到这种情况，明明配置了SSD，且平时Windows下启动也很快。但是安装Ubuntu之后刚开始启动很快，使用一段后或是重置引导，或是Windows下磁盘分区、调整大小等操作后，发现Ubuntu启动奇慢？ 问题分析在进行上述的磁盘操作后，可能导致Ubuntu下的盘符发生变化。可以通过grub修复或是EasyBCD修复后可以重新找回Ubuntu系统，但是此时swap分区的ID也发生变化了，而/etc/fstab文件夹中的交换分区的UUID并没有更新，所以启动时交换分区加载出错，导致启动时间变长。（按理说Ubuntu启动应该比Windows快才读，何况是SSD，两分半钟是什么鬼？） 解决方案如果内存够大（8G+），则可以尝试注释掉/etc/fstab中的swap分区，如下： 12345678910111213$ sudo vim /etc/fstab# /etc/fstab: static file system information.## Use 'blkid' to print the universally unique identifier for a# device; this may be used with UUID= as a more robust way to name devices# that works even if disks are added and removed. See fstab(5).## &lt;file system&gt; &lt;mount point&gt; &lt;type&gt; &lt;options&gt; &lt;dump&gt; &lt;pass&gt;# / was on /dev/sda2 during installationUUID=850088d8-2274-4504-be9b-d4d5959a67a3 / ext4 errors=remount-ro 0 1# swap was on /dev/sda4 during installation#UUID=f5671da1-9906-4b4c-9613-6e84f9001fa9 none swap sw 0 0 修改完成后保存，然后重启： 1$ sudo reboot 如果恢复快速启动，则问题锁定，可以在重启后使用GParted等工具查看最新的swap分区的UUID，修改到/etc/fstab中去。再次启动后通过系统监视器查看交换分区加载情况即可。 小结重装Ubuntu是一件比较蛋疼的事，软件环境配置不像Windows那样可以ghost。如果这种方法可以解决你的问题那就不必费劲重装、重新构建环境了。 谢谢观看！]]></content>
+      <categories>
+        <category>Ubuntu学习</category>
+      </categories>
+      <tags>
+        <tag>Ubuntu</tag>
+      </tags>
+  </entry>
 </search>

@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="Hexo 静态博客 学习">
+<meta name="description" content="找到 \themes\next\layout_partials\下面的footer.swig文件，打开：  12345678910&amp;lt;div class=&quot;powered-by&quot;&amp;gt;  &amp;#123;&amp;#123; __(&apos;footer.powered&apos;, &apos;&amp;lt;a class=&quot;theme-link&quot; href=&quot;https://hexo.io&quot;&amp;gt;Hexo&amp;lt;/a&amp;gt;&apos;)">
 <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo去掉底部强力驱动及主题字样">
 <meta property="og:url" content="http://yoursite.com/2017/09/08/11.Hexo去掉底部强力驱动及主题字样/index.html">
 <meta property="og:site_name" content="潇湘夜雨">
-<meta property="og:description" content="Hexo 静态博客 学习">
+<meta property="og:description" content="找到 \themes\next\layout_partials\下面的footer.swig文件，打开：  12345678910&amp;lt;div class=&quot;powered-by&quot;&amp;gt;  &amp;#123;&amp;#123; __(&apos;footer.powered&apos;, &apos;&amp;lt;a class=&quot;theme-link&quot; href=&quot;https://hexo.io&quot;&amp;gt;Hexo&amp;lt;/a&amp;gt;&apos;)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-09T14:53:52.676Z">
+<meta property="og:updated_time" content="2017-09-10T16:56:38.203Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo去掉底部强力驱动及主题字样">
-<meta name="twitter:description" content="Hexo 静态博客 学习">
+<meta name="twitter:description" content="找到 \themes\next\layout_partials\下面的footer.swig文件，打开：  12345678910&amp;lt;div class=&quot;powered-by&quot;&amp;gt;  &amp;#123;&amp;#123; __(&apos;footer.powered&apos;, &apos;&amp;lt;a class=&quot;theme-link&quot; href=&quot;https://hexo.io&quot;&amp;gt;Hexo&amp;lt;/a&amp;gt;&apos;)">
 
 
 
@@ -414,10 +414,6 @@
           
 
           
-              <div class="post-description">
-                  Hexo 静态博客 学习
-              </div>
-          
 
         </div>
       </header>
@@ -435,10 +431,15 @@
         <ol>
 <li><p>找到 \themes\next\layout_partials\下面的footer.swig文件，打开：</p>
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;div class=<span class="string">"powered-by"</span>&gt;</div><div class="line">  &#123;&#123; __(<span class="string">'footer.powered'</span>, <span class="string">'&lt;a class="theme-link" href="https://hexo.io"&gt;Hexo&lt;/a&gt;'</span>) &#125;&#125;</div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;div class=<span class="string">"theme-info"</span>&gt;</div><div class="line">  &#123;&#123; __(<span class="string">'footer.theme'</span>) &#125;&#125; -</div><div class="line">  &lt;a class=<span class="string">"theme-link"</span> href=<span class="string">"https://github.com/iissnan/hexo-theme-next"</span>&gt;</div><div class="line">    NexT.&#123;&#123; theme.scheme &#125;&#125;</div><div class="line">  &lt;/a&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
-<p> 第一条是“由Hexo驱动” 的Hexo链接，把xml段删除，只留两个单引号’’。</p>
-<p> 第二条是“主题-Next.XX”，将xml段都删掉，不留引号。</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;div class=<span class="string">"powered-by"</span>&gt;</div><div class="line">  &#123;&#123; __(<span class="string">'footer.powered'</span>, <span class="string">''</span>) &#125;&#125;</div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;div class=<span class="string">"theme-info"</span>&gt;</div><div class="line">  &#123;&#123; __(<span class="string">'footer.theme'</span>) &#125;&#125;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
 </li>
+</ol>
+<a id="more"></a>
+<pre><code>第一条是“由Hexo驱动” 的Hexo链接，把xml段删除，只留两个单引号&apos;&apos;。
+
+第二条是“主题-Next.XX”，将xml段都删掉，不留引号。
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;div class=<span class="string">"powered-by"</span>&gt;</div><div class="line">  &#123;&#123; __(<span class="string">'footer.powered'</span>, <span class="string">''</span>) &#125;&#125;</div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;div class=<span class="string">"theme-info"</span>&gt;</div><div class="line">  &#123;&#123; __(<span class="string">'footer.theme'</span>) &#125;&#125;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+</code></pre><ol>
 <li><p>找到这个地方\themes\next\languages\ 下面的语言文件zh-Hans.yml（以中文为例）：</p>
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">footer:</div><div class="line">  powered: <span class="string">"由 %s 强力驱动"</span></div><div class="line">  theme: 主题</div></pre></td></tr></table></figure>
 <p> 将上面的文字改成自己想要的即可。</p>

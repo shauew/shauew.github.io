@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="Hexo 静态博客 学习">
+<meta name="description" content="1. 准备如果你使用过 Github Pages ，那么上手使用码云的Pages服务会很轻松。使用码云上的Pages相较于Github Pages，访问速度会更快，毕竟是在国内，木有梯子的话，你懂的。关于Hexo的基本操作及环境准备请参考我的博文《Ubuntu 16.04 下 Hexo环境的搭建》及《部署Hexo到github上》。">
 <meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="部署Hexo到git@osc上">
 <meta property="og:url" content="http://yoursite.com/2017/04/27/6.部署Hexo到git@osc上/index.html">
 <meta property="og:site_name" content="潇湘夜雨">
-<meta property="og:description" content="Hexo 静态博客 学习">
+<meta property="og:description" content="1. 准备如果你使用过 Github Pages ，那么上手使用码云的Pages服务会很轻松。使用码云上的Pages相较于Github Pages，访问速度会更快，毕竟是在国内，木有梯子的话，你懂的。关于Hexo的基本操作及环境准备请参考我的博文《Ubuntu 16.04 下 Hexo环境的搭建》及《部署Hexo到github上》。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-07T15:49:20.616Z">
+<meta property="og:updated_time" content="2017-09-10T16:57:37.017Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="部署Hexo到git@osc上">
-<meta name="twitter:description" content="Hexo 静态博客 学习">
+<meta name="twitter:description" content="1. 准备如果你使用过 Github Pages ，那么上手使用码云的Pages服务会很轻松。使用码云上的Pages相较于Github Pages，访问速度会更快，毕竟是在国内，木有梯子的话，你懂的。关于Hexo的基本操作及环境准备请参考我的博文《Ubuntu 16.04 下 Hexo环境的搭建》及《部署Hexo到github上》。">
 
 
 
@@ -414,10 +414,6 @@
           
 
           
-              <div class="post-description">
-                  Hexo 静态博客 学习
-              </div>
-          
 
         </div>
       </header>
@@ -433,11 +429,12 @@
 
       
         <h2 id="1-准备"><a href="#1-准备" class="headerlink" title="1. 准备"></a>1. 准备</h2><p>如果你使用过 <strong>Github Pages</strong> ，那么上手使用码云的Pages服务会很轻松。使用码云上的Pages相较于Github Pages，访问速度会更快，毕竟是在国内，木有梯子的话，你懂的。关于Hexo的基本操作及环境准备请参考我的博文《Ubuntu 16.04 下 Hexo环境的搭建》及《部署Hexo到github上》。</p>
+<a id="more"></a>
 <h2 id="2-注册"><a href="#2-注册" class="headerlink" title="2. 注册"></a>2. 注册</h2><p>登录 <a href="https://git.oschina.net/" target="_blank" rel="external">https://git.oschina.net/</a> 注册账号，并创建一个仓库，仓库名不限制。但如果你想以根目录的形式访问自己的静态网站，需要建立一个与自己个性地址同名的项目，如 <a href="http://git.oschina.net/shauew" target="_blank" rel="external">http://git.oschina.net/shauew</a> 这个用户，想要创建一个自己的站点，但不想以子目录的方式访问，想以 shauew.oschina.io 直接访问，那么他需要创建一个名字为shauew的项目 <a href="http://git.oschina.net/shauew/shauew" target="_blank" rel="external">http://git.oschina.net/shauew/shauew</a> 。部署完成后，就可以通过 <a href="http://shauew.oschina.io" target="_blank" rel="external">http://shauew.oschina.io</a> 进行访问了。</p>
 <h2 id="3-部署"><a href="#3-部署" class="headerlink" title="3. 部署"></a>3. 部署</h2><p>这里的部署与github上一致，唯一的区别只是部署的地址不一样。</p>
 <p>修改根目录下的_config.yml中的仓库地址：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line"><span class="built_in">type</span>: git</div><div class="line">repository: <span class="comment">#这里设置git@osc资源库的ssh地址（ssh地址添加ras公钥后可以免密）</span></div><div class="line">branch: master</div></pre></td></tr></table></figure>
-<p><strong>注意：这里的设置冒号后面必须有空格。</strong>   </p>
+<p><strong>注意：这里的设置冒号后面必须有空格。</strong></p>
 <p>然后执行如下命令进行部署：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line">hexo deploy     <span class="comment">#上述两条指令等价于 hexo deploy -g</span></div></pre></td></tr></table></figure>
 <h2 id="4-启动"><a href="#4-启动" class="headerlink" title="4. 启动"></a>4. 启动</h2><p>进入上面新建的仓库，可以看到我们部署的静态页已经推送上来了。点击服务下拉Pages，下拉进入，再点击启动服务完成部署。之后使用我们的个性域名 shauew.oschina.io 就可以访问到这个门户啦。<strong>遗憾的是git@osc的Pages不像github那样可以支持域名绑定，目前只能通过oschina来访问。</strong></p>
@@ -509,8 +506,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/25/5.Ubuntu下搜狗输入法无法输入中文问题解决/" rel="next" title="Ubuntu下搜狗输入法无法输入中文解决">
-                <i class="fa fa-chevron-left"></i> Ubuntu下搜狗输入法无法输入中文解决
+              <a href="/2017/04/25/5.Ubuntu下搜狗输入法无法输入中文问题解决/" rel="next" title="Ubuntu 下搜狗输入法无法输入中文解决">
+                <i class="fa fa-chevron-left"></i> Ubuntu 下搜狗输入法无法输入中文解决
               </a>
             
           </div>

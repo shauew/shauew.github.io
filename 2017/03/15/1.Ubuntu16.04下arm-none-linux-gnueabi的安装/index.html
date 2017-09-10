@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="Ubuntu linux 工具链安装">
+<meta name="description" content="1.先下载最新的安装包arm-2014.05-29-arm-none-Linux-gnueabi-i686-pc-linux-gnu.tar.bz2，推荐下载地址 http://pan.baidu.com/s/1mgyYfos。 2.拷贝至目标文件夹并解压缩，推荐如下路径123$ sudo cp arm-2014.05-29-arm-none-linux-gnueabi-i686-pc-linux">
 <meta name="keywords" content="Ubuntu">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu 16.04 下 arm-none-linux-gnueabi 的安装">
 <meta property="og:url" content="http://yoursite.com/2017/03/15/1.Ubuntu16.04下arm-none-linux-gnueabi的安装/index.html">
 <meta property="og:site_name" content="潇湘夜雨">
-<meta property="og:description" content="Ubuntu linux 工具链安装">
+<meta property="og:description" content="1.先下载最新的安装包arm-2014.05-29-arm-none-Linux-gnueabi-i686-pc-linux-gnu.tar.bz2，推荐下载地址 http://pan.baidu.com/s/1mgyYfos。 2.拷贝至目标文件夹并解压缩，推荐如下路径123$ sudo cp arm-2014.05-29-arm-none-linux-gnueabi-i686-pc-linux">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-07T15:49:16.182Z">
+<meta property="og:updated_time" content="2017-09-10T16:58:42.819Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu 16.04 下 arm-none-linux-gnueabi 的安装">
-<meta name="twitter:description" content="Ubuntu linux 工具链安装">
+<meta name="twitter:description" content="1.先下载最新的安装包arm-2014.05-29-arm-none-Linux-gnueabi-i686-pc-linux-gnu.tar.bz2，推荐下载地址 http://pan.baidu.com/s/1mgyYfos。 2.拷贝至目标文件夹并解压缩，推荐如下路径123$ sudo cp arm-2014.05-29-arm-none-linux-gnueabi-i686-pc-linux">
 
 
 
@@ -414,10 +414,6 @@
           
 
           
-              <div class="post-description">
-                  Ubuntu linux 工具链安装
-              </div>
-          
 
         </div>
       </header>
@@ -434,6 +430,7 @@
       
         <p>1.先下载最新的安装包arm-2014.05-29-arm-none-Linux-gnueabi-i686-pc-linux-gnu.tar.bz2，推荐下载地址 <a href="http://pan.baidu.com/s/1mgyYfos。" target="_blank" rel="external">http://pan.baidu.com/s/1mgyYfos。</a></p>
 <p>2.拷贝至目标文件夹并解压缩，推荐如下路径<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ sudo cp arm-2014.05-29-arm-none-linux-gnueabi-i686-pc-linux-gnu.tar.bz2 /usr/<span class="built_in">local</span></div><div class="line">$ <span class="built_in">cd</span> /usr/<span class="built_in">local</span></div><div class="line">$ sudo tar -jxvf arm-2014.05-29-arm-none-linux-gnueabi-i686-pc-linux-gnu.tar.bz2</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
 <p>3.配置环境变量，使其生效<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo vim /etc/bash.bashrc</div></pre></td></tr></table></figure></p>
 <p>在最后添加<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">PATH=<span class="variable">$PATH</span>:/usr/<span class="built_in">local</span>/arm-2014.05/bin</div></pre></td></tr></table></figure></p>
 <p>:wq退出，source使其立即生效<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">source</span> /etc/bash.bashrc</div></pre></td></tr></table></figure></p>
