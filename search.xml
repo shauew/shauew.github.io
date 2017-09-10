@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Hexo添加评论及打赏功能]]></title>
     <url>%2F2017%2F09%2F10%2F14.Hexo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8F%8A%E6%89%93%E8%B5%8F%E5%8A%9F%E8%83%BD%2F</url>
-    <content type="text"><![CDATA[添加友言评论功能 注册友言 打开友言官网，单击“注册”按钮后注册。 获取uid 单击“后台管理”获取ID。 配置友言 编辑主题配置文件，插入uid 123# Support for youyan comments system.# You can get your uid from http://www.uyan.cc# youyan_uid: your uid 编辑站点配置文件，添加以下内容 123# Support for youyan comments system.# You can get your uid from http://www.uyan.ccyouyan_uid: xxxxx 添加打赏功能 获取微信收款二维码及支付宝收款二维码 请自行百度吧 将二维码图片放到主题根目录/source/images/文件夹 开启打赏功能 找到主题配置文件，在其最后添加打赏的配置信息 12345# Reward#reward_comment: Donate comment here#wechatpay: /images/wechatpay.jpg#alipay: /images/alipay.jpg#bitcoin: /images/bitcoin.png 去掉微信支付及阿里支付前的注释符号，并将后面的图片换成自己的图片名 123reward_comment: 打赏请看这儿wechatpay: /images/weixinsoukuan_20170910223421.jpgalipay: /images/zhifubaoshoukuan_20170910223530.jpg 谢谢观看！]]></content>
+    <content type="text"><![CDATA[添加友言评论功能 注册友言 打开友言官网，单击“注册”按钮后注册 获取uid 单击“后台管理”获取ID 配置友言 编辑主题配置文件，插入uid 123# Support for youyan comments system.# You can get your uid from http://www.uyan.cc# youyan_uid: your uid 编辑站点配置文件，添加以下内容 123# Support for youyan comments system.# You can get your uid from http://www.uyan.ccyouyan_uid: xxxxx 添加打赏功能 获取微信收款二维码及支付宝收款二维码 请自行百度吧 将二维码图片放到主题根目录/source/images/文件夹 尽量使用英文 开启打赏功能 找到主题配置文件，在其最后添加打赏的配置信息 12345# Reward#reward_comment: Donate comment here#wechatpay: /images/wechatpay.jpg#alipay: /images/alipay.jpg#bitcoin: /images/bitcoin.png 去掉微信支付及阿里支付前的注释符号，并将后面的图片换成自己的图片名 123reward_comment: 打赏请看这儿wechatpay: /images/weixinsoukuan_20170910223421.jpgalipay: /images/zhifubaoshoukuan_20170910223530.jpg 谢谢观看！]]></content>
       <categories>
         <category>Hexo学习</category>
       </categories>
