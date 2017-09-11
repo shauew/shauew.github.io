@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>http://shauew.tech/2017/09/12/15.%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E4%B8%83%E7%89%9B%E4%BD%9C%E4%B8%BA%E5%9B%BE%E5%BA%8A/</loc>
+    <lastmod>2017-09-11T18:04:44.323Z</lastmod>
+    <data>
+        <display>
+        <title>如何使用七牛作为图床</title>
+        <pubTime>2017-09-11T17:35:28.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo学习" url="http://shauew.tech/categories/Hexo%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shauew.tech/2017/03/15/1.Ubuntu16.04%E4%B8%8Barm-none-linux-gnueabi%E7%9A%84%E5%AE%89%E8%A3%85/</loc>
+    <lastmod>2017-09-11T17:03:50.604Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu 16.04 下 arm-none-linux-gnueabi 的安装</title>
+        <pubTime>2017-03-14T17:07:01.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+         
+           
+             
+              <breadCrumb title="Ubuntu学习" url="http://shauew.tech/categories/Ubuntu%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shauew.tech/2017/04/25/5.Ubuntu%E4%B8%8B%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95%E6%97%A0%E6%B3%95%E8%BE%93%E5%85%A5%E4%B8%AD%E6%96%87%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</loc>
+    <lastmod>2017-09-11T17:03:28.174Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu下搜狗输入法无法输入中文解决</title>
+        <pubTime>2017-04-25T15:10:38.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+         
+           
+             
+              <breadCrumb title="Ubuntu学习" url="http://shauew.tech/categories/Ubuntu%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shauew.tech/2017/09/09/13.Hexo%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</loc>
+    <lastmod>2017-09-11T16:58:54.613Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo添加本地搜索功能</title>
+        <pubTime>2017-09-09T15:55:21.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo学习" url="http://shauew.tech/categories/Hexo%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shauew.tech/2017/03/13/0.Ubuntu%E5%90%AF%E5%8A%A8%E6%97%B6%E9%97%B4%E8%BF%87%E9%95%BF%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
+    <lastmod>2017-09-10T16:58:52.463Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu启动时间过长解决（两分多钟）</title>
+        <pubTime>2017-03-13T15:41:37.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+         
+           
+             
+              <breadCrumb title="Ubuntu学习" url="http://shauew.tech/categories/Ubuntu%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shauew.tech/2017/03/30/2.Hexo%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2017-09-10T16:58:33.354Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu 16.04 下 Hexo环境的搭建</title>
+        <pubTime>2017-03-30T14:04:35.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo学习" url="http://shauew.tech/categories/Hexo%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shauew.tech/2017/03/30/3.%E9%83%A8%E7%BD%B2Hexo%E5%88%B0github%E4%B8%8A/</loc>
+    <lastmod>2017-09-10T16:58:25.111Z</lastmod>
+    <data>
+        <display>
+        <title>部署Hexo到github上</title>
+        <pubTime>2017-03-30T14:58:21.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo学习" url="http://shauew.tech/categories/Hexo%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shauew.tech/2017/04/25/4.Hexo%E6%B7%BB%E5%8A%A0%E5%BD%92%E6%A1%A3%E3%80%81%E6%A0%87%E7%AD%BE%E7%AD%89%E9%A1%B5%E9%9D%A2/</loc>
+    <lastmod>2017-09-10T16:58:15.914Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo添加归档、标签等页面</title>
+        <pubTime>2017-04-25T14:55:34.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo学习" url="http://shauew.tech/categories/Hexo%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shauew.tech/2017/04/27/6.%E9%83%A8%E7%BD%B2Hexo%E5%88%B0git@osc%E4%B8%8A/</loc>
+    <lastmod>2017-09-10T16:57:37.017Z</lastmod>
+    <data>
+        <display>
+        <title>部署Hexo到git@osc上</title>
+        <pubTime>2017-04-27T15:01:06.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo学习" url="http://shauew.tech/categories/Hexo%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shauew.tech/2017/04/27/7.Git%E7%9A%84%E5%85%8D%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81%E6%8E%A8%E9%80%81%E6%8B%89%E5%8F%96/</loc>
+    <lastmod>2017-09-10T16:57:25.820Z</lastmod>
+    <data>
+        <display>
+        <title>Git的免输入密码推送拉取</title>
+        <pubTime>2017-04-27T15:58:10.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+         
+           
+             
+              <breadCrumb title="Git学习" url="http://shauew.tech/categories/Git%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shauew.tech/2017/05/09/8.Ubuntu%E4%B8%8B%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2017-09-10T16:57:15.227Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu下嵌入式开发环境的搭建</title>
+        <pubTime>2017-05-09T14:47:35.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+         
+           
+             
+              <breadCrumb title="Ubuntu学习" url="http://shauew.tech/categories/Ubuntu%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shauew.tech/2017/09/08/9.Windows%E4%B8%8BHexo%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2017-09-10T16:57:01.610Z</lastmod>
+    <data>
+        <display>
+        <title>Windows 下 Hexo环境的搭建</title>
+        <pubTime>2017-09-07T16:11:21.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo学习" url="http://shauew.tech/categories/Hexo%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shauew.tech/2017/09/08/10.Hexo%E6%96%B0%E5%BB%BA%E5%88%86%E7%B1%BB%E9%A1%B5/</loc>
+    <lastmod>2017-09-10T16:56:48.400Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo新建分类页</title>
+        <pubTime>2017-09-07T17:02:41.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo学习" url="http://shauew.tech/categories/Hexo%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shauew.tech/2017/09/08/11.Hexo%E5%8E%BB%E6%8E%89%E5%BA%95%E9%83%A8%E5%BC%BA%E5%8A%9B%E9%A9%B1%E5%8A%A8%E5%8F%8A%E4%B8%BB%E9%A2%98%E5%AD%97%E6%A0%B7/</loc>
+    <lastmod>2017-09-10T16:56:38.203Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo去掉底部强力驱动及主题字样</title>
+        <pubTime>2017-09-07T17:45:55.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo学习" url="http://shauew.tech/categories/Hexo%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shauew.tech/2017/09/09/12.GIT%20warning%20LF%20will%20be%20replaced%20by%20CRLF/</loc>
+    <lastmod>2017-09-10T16:56:10.230Z</lastmod>
+    <data>
+        <display>
+        <title>GIT warning LF will be replaced by CRLF 解决方法</title>
+        <pubTime>2017-09-09T15:03:02.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+         
+           
+             
+              <breadCrumb title="Git学习" url="http://shauew.tech/categories/Git%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://shauew.tech/2017/09/10/14.Hexo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8F%8A%E6%89%93%E8%B5%8F%E5%8A%9F%E8%83%BD/</loc>
+    <lastmod>2017-09-10T16:52:27.683Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo添加评论及打赏功能</title>
+        <pubTime>2017-09-10T14:20:49.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo学习" url="http://shauew.tech/categories/Hexo%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+</urlset>

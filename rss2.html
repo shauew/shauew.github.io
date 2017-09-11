@@ -4,7 +4,7 @@
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>潇湘夜雨</title>
-    <link>http://yoursite.com/</link>
+    <link>http://shauew.tech/</link>
     <atom:link href="/rss2.html" rel="self" type="application/rss+xml"/>
     
     <description>个人站</description>
@@ -13,8 +13,8 @@
     
     <item>
       <title>如何使用七牛作为图床</title>
-      <link>http://yoursite.com/2017/09/12/15.%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E4%B8%83%E7%89%9B%E4%BD%9C%E4%B8%BA%E5%9B%BE%E5%BA%8A/</link>
-      <guid>http://yoursite.com/2017/09/12/15.%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E4%B8%83%E7%89%9B%E4%BD%9C%E4%B8%BA%E5%9B%BE%E5%BA%8A/</guid>
+      <link>http://shauew.tech/2017/09/12/15.%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E4%B8%83%E7%89%9B%E4%BD%9C%E4%B8%BA%E5%9B%BE%E5%BA%8A/</link>
+      <guid>http://shauew.tech/2017/09/12/15.%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E4%B8%83%E7%89%9B%E4%BD%9C%E4%B8%BA%E5%9B%BE%E5%BA%8A/</guid>
       <pubDate>Mon, 11 Sep 2017 17:35:28 GMT</pubDate>
       <description>
       
@@ -29,13 +29,13 @@
       
       <content:encoded><![CDATA[<p>通常图片可以放在服务器里面随博文一起外发，但如果使用类似github之类的静态页的话空间很有限，所以我们需要从网络上链接到图片以节省空间。</p><p>这里推荐使用七牛（10GB免费存储，每月10GB免费下载流量）。</p><h1 id="注册七牛"><a href="#注册七牛" class="headerlink" title="注册七牛"></a>注册七牛</h1><p>首先需要注册并登陆<a href="https://portal.qiniu.com/signup?code=3lnfyqecg5w7m" target="_blank" rel="external">七牛</a>，按照官网说明创建空间（最好创建公开空间）。</p><h1 id="上传图片"><a href="#上传图片" class="headerlink" title="上传图片"></a>上传图片</h1><ol><li><p>使用网页上传</p><p> 我创建的空间为<em><strong>hexo-image-store</strong></em>，打开存储空间的内容管理，可以从这里上传图片（通过上传文件）。</p><p> <img src="http://ow2qstwlo.bkt.clouddn.com/Blog/170912/102LL7l9Gh.png?imageslim" alt="内容管理" title="存储空间_内容管理"></p><p> 图片URL由外链加相对路径下的随机码组成，图中的图片URL如下：</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://ow2qstwlo.bkt.clouddn.com/Blog/170911/jBj4c87IiE.jpg</div></pre></td></tr></table></figure></li><li><p>使用图床神器上传</p><p> 下载<a href="http://mpic.lzhaofu.cn/" target="_blank" rel="external">MPic-图床神器</a>，设置账号。空间名为七牛对象存储空间名称（类似于刚刚创建的<em><strong>hexo-image-store</strong></em>），AccessKey和SecretKey在七牛个人面板下的密钥管理中，域名为七牛对象存储空间中内容管理页签下的外链默认域名。</p><p> 配置好七牛账号后看到图床神器的面板：</p><p> <img src="http://ow2qstwlo.bkt.clouddn.com/Blog/170912/liJak2ecEF.png?imageslim" alt="神器面板" title="神器面板"></p><p> 将图片拖动到面板上即可上传到我们对应的空间，上传成功后面板变成下面的样子：</p><p> <img src="http://ow2qstwlo.bkt.clouddn.com/Blog/170912/jH6eJgHI5i.png?imageslim" alt="上传成功" title="上传成功后面板样式"></p><p> 点击<em><strong>复制</strong></em>后默认得到Markdown格式的代码，可以直接贴到你的Markdown文本中：</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![mark](http://ow2qstwlo.bkt.clouddn.com/Blog/170912/jH6eJgHI5i.png?imageslim)</div></pre></td></tr></table></figure><p> 其中<em><strong>mark</strong></em>处表示图片还未加载成功时显示的替换文本；还可以在最后的括号前加”xxx”来作为图片下标，示例如下：</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![上传成功](http://ow2qstwlo.bkt.clouddn.com/Blog/170912/jH6eJgHI5i.png?imageslim <span class="string">"上传成功后面板样式"</span>)</div></pre></td></tr></table></figure></li></ol><!--     ![图片还未加载成功时显示的替换文本](http://ow2qstwlo.bkt.clouddn.com/Blog/170911/jBj4c87IiE.jpg?imageslim "刘指导") --><h1 id="谢谢观看！"><a href="#谢谢观看！" class="headerlink" title="谢谢观看！"></a>谢谢观看！</h1>]]></content:encoded>
       
-      <comments>http://yoursite.com/2017/09/12/15.%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E4%B8%83%E7%89%9B%E4%BD%9C%E4%B8%BA%E5%9B%BE%E5%BA%8A/#disqus_thread</comments>
+      <comments>http://shauew.tech/2017/09/12/15.%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E4%B8%83%E7%89%9B%E4%BD%9C%E4%B8%BA%E5%9B%BE%E5%BA%8A/#disqus_thread</comments>
     </item>
     
     <item>
       <title>Hexo添加评论及打赏功能</title>
-      <link>http://yoursite.com/2017/09/10/14.Hexo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8F%8A%E6%89%93%E8%B5%8F%E5%8A%9F%E8%83%BD/</link>
-      <guid>http://yoursite.com/2017/09/10/14.Hexo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8F%8A%E6%89%93%E8%B5%8F%E5%8A%9F%E8%83%BD/</guid>
+      <link>http://shauew.tech/2017/09/10/14.Hexo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8F%8A%E6%89%93%E8%B5%8F%E5%8A%9F%E8%83%BD/</link>
+      <guid>http://shauew.tech/2017/09/10/14.Hexo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8F%8A%E6%89%93%E8%B5%8F%E5%8A%9F%E8%83%BD/</guid>
       <pubDate>Sun, 10 Sep 2017 14:20:49 GMT</pubDate>
       <description>
       
@@ -52,13 +52,13 @@
       
       <content:encoded><![CDATA[<h1 id="添加友言评论功能"><a href="#添加友言评论功能" class="headerlink" title="添加友言评论功能"></a>添加友言评论功能</h1><ol><li><p>注册友言</p><p> 打开<a href="http://www.uyan.cc/" target="_blank" rel="external">友言</a>官网，单击“注册”按钮后注册</p></li><li><p>获取uid</p><p> 单击“后台管理”获取ID</p></li></ol><a id="more"></a><ol><li><p>配置友言</p><p> 编辑主题配置文件，插入uid</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Support for youyan comments system.</span></div><div class="line"><span class="comment"># You can get your uid from http://www.uyan.cc</span></div><div class="line"><span class="comment"># youyan_uid: your uid</span></div></pre></td></tr></table></figure><p> 编辑站点配置文件，添加以下内容</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Support for youyan comments system.</span></div><div class="line"><span class="comment"># You can get your uid from http://www.uyan.cc</span></div><div class="line">youyan_uid: xxxxx</div></pre></td></tr></table></figure></li></ol><h1 id="添加打赏功能"><a href="#添加打赏功能" class="headerlink" title="添加打赏功能"></a>添加打赏功能</h1><ol><li><p>获取微信收款二维码及支付宝收款二维码</p><p> 请自行百度吧</p></li><li><p>将二维码图片放到<em><strong>主题根目录/source/images/</strong></em>文件夹</p><p> 尽量使用英文</p></li><li><p>开启打赏功能</p><p> 找到主题配置文件，在其最后添加打赏的配置信息</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Reward</span></div><div class="line"><span class="comment">#reward_comment: Donate comment here</span></div><div class="line"><span class="comment">#wechatpay: /images/wechatpay.jpg</span></div><div class="line"><span class="comment">#alipay: /images/alipay.jpg</span></div><div class="line"><span class="comment">#bitcoin: /images/bitcoin.png</span></div></pre></td></tr></table></figure><p> 去掉微信支付及阿里支付前的注释符号，并将后面的图片换成自己的图片名</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">reward_comment: 打赏请看这儿</div><div class="line">wechatpay: /images/weixinsoukuan_20170910223421.jpg</div><div class="line">alipay: /images/zhifubaoshoukuan_20170910223530.jpg</div></pre></td></tr></table></figure></li></ol><h1 id="谢谢观看！"><a href="#谢谢观看！" class="headerlink" title="谢谢观看！"></a>谢谢观看！</h1>]]></content:encoded>
       
-      <comments>http://yoursite.com/2017/09/10/14.Hexo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8F%8A%E6%89%93%E8%B5%8F%E5%8A%9F%E8%83%BD/#disqus_thread</comments>
+      <comments>http://shauew.tech/2017/09/10/14.Hexo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8F%8A%E6%89%93%E8%B5%8F%E5%8A%9F%E8%83%BD/#disqus_thread</comments>
     </item>
     
     <item>
       <title>Hexo添加本地搜索功能</title>
-      <link>http://yoursite.com/2017/09/09/13.Hexo%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</link>
-      <guid>http://yoursite.com/2017/09/09/13.Hexo%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</guid>
+      <link>http://shauew.tech/2017/09/09/13.Hexo%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</link>
+      <guid>http://shauew.tech/2017/09/09/13.Hexo%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</guid>
       <pubDate>Sat, 09 Sep 2017 15:55:21 GMT</pubDate>
       <description>
       
@@ -72,13 +72,13 @@
       
       <content:encoded><![CDATA[<ol><li><p>安装 hexo-generator-search：</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-generator-search --save</div></pre></td></tr></table></figure></li></ol><a id="more"></a><ol><li><p>安装 hexo-generator-searchdb：</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-generator-searchdb --save</div></pre></td></tr></table></figure></li><li><p>启动搜索：</p><p> 编辑主题配置文件，启动本地搜索功能</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">local_search:</div><div class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></div></pre></td></tr></table></figure><p> 编辑站点配置文件，添加以下内容</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">search:</div><div class="line">  path: search.xml</div><div class="line">  field: post</div><div class="line">  format: html</div><div class="line">  <span class="built_in">limit</span>: 10000</div></pre></td></tr></table></figure></li><li><p>谢谢观看！</p></li></ol>]]></content:encoded>
       
-      <comments>http://yoursite.com/2017/09/09/13.Hexo%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/#disqus_thread</comments>
+      <comments>http://shauew.tech/2017/09/09/13.Hexo%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/#disqus_thread</comments>
     </item>
     
     <item>
       <title>GIT warning LF will be replaced by CRLF 解决方法</title>
-      <link>http://yoursite.com/2017/09/09/12.GIT%20warning%20LF%20will%20be%20replaced%20by%20CRLF/</link>
-      <guid>http://yoursite.com/2017/09/09/12.GIT%20warning%20LF%20will%20be%20replaced%20by%20CRLF/</guid>
+      <link>http://shauew.tech/2017/09/09/12.GIT%20warning%20LF%20will%20be%20replaced%20by%20CRLF/</link>
+      <guid>http://shauew.tech/2017/09/09/12.GIT%20warning%20LF%20will%20be%20replaced%20by%20CRLF/</guid>
       <pubDate>Sat, 09 Sep 2017 15:03:02 GMT</pubDate>
       <description>
       
@@ -93,13 +93,13 @@
       
       <content:encoded><![CDATA[<ol><li><p>问题描述：</p><p> 使用Hexo部署静态页到GIthub上的时候提示</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Warning: LF will be replaced by CRLF</div></pre></td></tr></table></figure></li></ol><a id="more"></a><ol><li><p>问题解析：</p><p> CR – Carriage-Return 回车(CR, ASCII 13, \r)<br> LF – Line-Feed       换行(LF, ASCII 10, \n)</p><p> 在Windows中广泛使用回车换行来标识一行的结束（CRLF），而在Linux/UNIX系统中只有换行符（LF），但两个ACSII字符不会在屏幕有任何输出。</p></li><li><p>解决方案：</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git config --gobal core.autocrlf <span class="literal">false</span></div></pre></td></tr></table></figure></li><li><p>谢谢观看！</p></li></ol>]]></content:encoded>
       
-      <comments>http://yoursite.com/2017/09/09/12.GIT%20warning%20LF%20will%20be%20replaced%20by%20CRLF/#disqus_thread</comments>
+      <comments>http://shauew.tech/2017/09/09/12.GIT%20warning%20LF%20will%20be%20replaced%20by%20CRLF/#disqus_thread</comments>
     </item>
     
     <item>
       <title>Hexo去掉底部强力驱动及主题字样</title>
-      <link>http://yoursite.com/2017/09/08/11.Hexo%E5%8E%BB%E6%8E%89%E5%BA%95%E9%83%A8%E5%BC%BA%E5%8A%9B%E9%A9%B1%E5%8A%A8%E5%8F%8A%E4%B8%BB%E9%A2%98%E5%AD%97%E6%A0%B7/</link>
-      <guid>http://yoursite.com/2017/09/08/11.Hexo%E5%8E%BB%E6%8E%89%E5%BA%95%E9%83%A8%E5%BC%BA%E5%8A%9B%E9%A9%B1%E5%8A%A8%E5%8F%8A%E4%B8%BB%E9%A2%98%E5%AD%97%E6%A0%B7/</guid>
+      <link>http://shauew.tech/2017/09/08/11.Hexo%E5%8E%BB%E6%8E%89%E5%BA%95%E9%83%A8%E5%BC%BA%E5%8A%9B%E9%A9%B1%E5%8A%A8%E5%8F%8A%E4%B8%BB%E9%A2%98%E5%AD%97%E6%A0%B7/</link>
+      <guid>http://shauew.tech/2017/09/08/11.Hexo%E5%8E%BB%E6%8E%89%E5%BA%95%E9%83%A8%E5%BC%BA%E5%8A%9B%E9%A9%B1%E5%8A%A8%E5%8F%8A%E4%B8%BB%E9%A2%98%E5%AD%97%E6%A0%B7/</guid>
       <pubDate>Thu, 07 Sep 2017 17:45:55 GMT</pubDate>
       <description>
       
@@ -113,7 +113,7 @@
       
       <content:encoded><![CDATA[<ol><li><p>找到 \themes\next\layout_partials\下面的footer.swig文件，打开：</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;div class=<span class="string">"powered-by"</span>&gt;</div><div class="line">  &#123;&#123; __(<span class="string">'footer.powered'</span>, <span class="string">'&lt;a class="theme-link" href="https://hexo.io"&gt;Hexo&lt;/a&gt;'</span>) &#125;&#125;</div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;div class=<span class="string">"theme-info"</span>&gt;</div><div class="line">  &#123;&#123; __(<span class="string">'footer.theme'</span>) &#125;&#125; -</div><div class="line">  &lt;a class=<span class="string">"theme-link"</span> href=<span class="string">"https://github.com/iissnan/hexo-theme-next"</span>&gt;</div><div class="line">    NexT.&#123;&#123; theme.scheme &#125;&#125;</div><div class="line">  &lt;/a&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></li></ol><a id="more"></a><pre><code>第一条是“由Hexo驱动” 的Hexo链接，把xml段删除，只留两个单引号&apos;&apos;。第二条是“主题-Next.XX”，将xml段都删掉，不留引号。<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;div class=<span class="string">"powered-by"</span>&gt;</div><div class="line">  &#123;&#123; __(<span class="string">'footer.powered'</span>, <span class="string">''</span>) &#125;&#125;</div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;div class=<span class="string">"theme-info"</span>&gt;</div><div class="line">  &#123;&#123; __(<span class="string">'footer.theme'</span>) &#125;&#125;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></code></pre><ol><li><p>找到这个地方\themes\next\languages\ 下面的语言文件zh-Hans.yml（以中文为例）：</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">footer:</div><div class="line">  powered: <span class="string">"由 %s 强力驱动"</span></div><div class="line">  theme: 主题</div></pre></td></tr></table></figure><p> 将上面的文字改成自己想要的即可。</p></li><li><p>谢谢观看！</p></li></ol>]]></content:encoded>
       
-      <comments>http://yoursite.com/2017/09/08/11.Hexo%E5%8E%BB%E6%8E%89%E5%BA%95%E9%83%A8%E5%BC%BA%E5%8A%9B%E9%A9%B1%E5%8A%A8%E5%8F%8A%E4%B8%BB%E9%A2%98%E5%AD%97%E6%A0%B7/#disqus_thread</comments>
+      <comments>http://shauew.tech/2017/09/08/11.Hexo%E5%8E%BB%E6%8E%89%E5%BA%95%E9%83%A8%E5%BC%BA%E5%8A%9B%E9%A9%B1%E5%8A%A8%E5%8F%8A%E4%B8%BB%E9%A2%98%E5%AD%97%E6%A0%B7/#disqus_thread</comments>
     </item>
     
   </channel>
