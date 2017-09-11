@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hexo 测试7牛图床]]></title>
-    <url>%2F2017%2F09%2F10%2F15.%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95%2F</url>
-    <content type="text"><![CDATA[测试七牛图床这是一张图片 图片结束 谢谢观看！]]></content>
+    <title><![CDATA[如何使用七牛作为图床]]></title>
+    <url>%2F2017%2F09%2F12%2F15.%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E4%B8%83%E7%89%9B%E4%BD%9C%E4%B8%BA%E5%9B%BE%E5%BA%8A%2F</url>
+    <content type="text"><![CDATA[通常图片可以放在服务器里面随博文一起外发，但如果使用类似github之类的静态页的话空间很有限，所以我们需要从网络上链接到图片以节省空间。 这里推荐使用七牛（10GB免费存储，每月10GB免费下载流量）。 注册七牛首先需要注册并登陆七牛，按照官网说明创建空间（最好创建公开空间）。 上传图片 使用网页上传 我创建的空间为hexo-image-store，打开存储空间的内容管理，可以从这里上传图片（通过上传文件）。 图片URL由外链加相对路径下的随机码组成，图中的图片URL如下： 1http://ow2qstwlo.bkt.clouddn.com/Blog/170911/jBj4c87IiE.jpg 使用图床神器上传 下载MPic-图床神器，设置账号。空间名为七牛对象存储空间名称（类似于刚刚创建的hexo-image-store），AccessKey和SecretKey在七牛个人面板下的密钥管理中，域名为七牛对象存储空间中内容管理页签下的外链默认域名。 配置好七牛账号后看到图床神器的面板： 将图片拖动到面板上即可上传到我们对应的空间，上传成功后面板变成下面的样子： 点击复制后默认得到Markdown格式的代码，可以直接贴到你的Markdown文本中： 1![mark](http://ow2qstwlo.bkt.clouddn.com/Blog/170912/jH6eJgHI5i.png?imageslim) 其中mark处表示图片还未加载成功时显示的替换文本；还可以在最后的括号前加”xxx”来作为图片下标，示例如下： 1![上传成功](http://ow2qstwlo.bkt.clouddn.com/Blog/170912/jH6eJgHI5i.png?imageslim "上传成功后面板样式") 谢谢观看！]]></content>
       <categories>
         <category>Hexo学习</category>
       </categories>
@@ -111,7 +111,7 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Ubuntu 下搜狗输入法无法输入中文解决]]></title>
+    <title><![CDATA[Ubuntu下搜狗输入法无法输入中文解决]]></title>
     <url>%2F2017%2F04%2F25%2F5.Ubuntu%E4%B8%8B%E6%90%9C%E7%8B%97%E8%BE%93%E5%85%A5%E6%B3%95%E6%97%A0%E6%B3%95%E8%BE%93%E5%85%A5%E4%B8%AD%E6%96%87%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%2F</url>
     <content type="text"><![CDATA[系统及软件信息系统版本：ubuntu 17.04 LTS搜狗版本：sogoupinyin_2.1.0.0082_amd64fcitx版本：4.2.9.1 一：重启搜狗输入法通过下面的两个命令重启搜狗输入法，看重启后是否可以正常使用： 12~$ killall fcitx~$ killall sogou-qinpanel 二：检查修复安装依赖因为我之前是可以正常使用的，所以应该不是安装依赖的问题。刚安装好的朋友如果无法使用，可以用下面的命令排除或修复安装依赖问题 1~$ sudo apt-get install -f 三：删除配置文件，重启搜狗ubuntu下搜狗的配置文件在 ~/.config下的3个文件夹里：SogouPY、SogouPY.users、sogou-qimpanel删除这3个文件夹，然后重启搜狗。我使用这种方法后解决了无法输入中文问题。 谢谢观看！]]></content>
       <categories>
