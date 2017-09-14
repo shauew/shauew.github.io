@@ -1,4 +1,4 @@
+http://shauew.tech/2017/09/15/17.test/
 http://shauew.tech/2017/09/12/15.如何使用七牛作为图床/
 http://shauew.tech/2017/09/12/16.如何将hexo博客登入百度入口/
 http://shauew.tech/2017/09/10/14.Hexo添加评论及打赏功能/
-http://shauew.tech/2017/09/09/13.Hexo添加本地搜索功能/
