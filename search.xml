@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[如何将Hexo博客登入百度入口]]></title>
-    <url>%2F2017%2F09%2F12%2F16.%E5%A6%82%E4%BD%95%E5%B0%86hexo%E5%8D%9A%E5%AE%A2%E7%99%BB%E5%85%A5%E7%99%BE%E5%BA%A6%E5%85%A5%E5%8F%A3%2F</url>
-    <content type="text"><![CDATA[通常我们会把 Hexo 博客挂到 github pages 上，但这样无法被百度收录，所以这里推荐将 Hexo 部署到 coding 上面。 将 Hexo 同时部署到 github 及 coding 上面首先是创建 coding 的 ssh 秘钥并绑定到 coding 上，这样可以免密推送。具体与 github 上面的设置类似，就不赘述了。 编辑站点配置文件，如下： 1234deploy: type: git repository: git@github.com:xxxxx/xxxxx.github.io.git branch: master 将部署格式改为下面这种形式，即可将Hexo博客同步部署到 github 及 coding。 12345deploy: type: git repo: github: git@github.com:xxxxx/xxxxx.github.io.git,master coding: git@git.coding.net:xxxxx/xxxxx.coding.me.git,master coding 上面的 pages 的配置过程这里也不赘述了。 域名解析如果绑定了个性域名的话，可以将个性域名指向两个主页，一般国外指向 github，国内指向 coding，这样访问速度也会快一些。dnspod 配置如下： 主机记录 记录类型 线路类型 记录值 * CNAME 国内 xxxxx.coding.me @ CNAME 国内 xxxxx.coding.me www CNAME 国内 xxxxx.coding.me www CNAME 默认 pages.coding.me www CNAME 国外 xxxxx.github.io 注意：个性域名如果没有备案的话，友言评论会报抱歉，当前网页参数有误，操作失败。 百度站长入口百度站长平台支持html文件、html标签及CNAME三种方法来验证域名归属，推荐使用html文件方法。 为了不让验证的html文件改变，需要将html文件放置到主题目录下的source文件夹下，之后就可以验证域名归属了。 接下来在博客根目录下安装站点地图插件： 12npm install hexo-generator-sitemap --savenpm install hexo-generator-baidu-sitemap --save 在博客目录的_config.yml中添加如下代码： 12345# 自动生成sitemapsitemap:path: sitemap.xmlbaidusitemap:path: baidusitemap.xml 在主题目录的_config.yml中使能百度推送： 1baidu_push: true 之后就可以在百度站长入口中抓取到你博客的链接了。 谢谢观看！]]></content>
+    <title><![CDATA[如何使用七牛作为图床]]></title>
+    <url>%2F2017%2F09%2F12%2F15.%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E4%B8%83%E7%89%9B%E4%BD%9C%E4%B8%BA%E5%9B%BE%E5%BA%8A%2F</url>
+    <content type="text"><![CDATA[通常图片可以放在服务器里面随博文一起外发，但如果使用类似github之类的静态页的话空间很有限，所以我们需要从网络上链接到图片以节省空间。 这里推荐使用七牛（10GB免费存储，每月10GB免费下载流量）。 注册七牛首先需要注册并登陆七牛，按照官网说明创建空间（最好创建公开空间）。 上传图片 使用网页上传 我创建的空间为hexo-image-store，打开存储空间的内容管理，可以从这里上传图片（通过上传文件）。 图片URL由外链加相对路径下的随机码组成，图中的图片URL如下： 1http://ow2qstwlo.bkt.clouddn.com/Blog/170911/jBj4c87IiE.jpg 使用图床神器上传 下载MPic-图床神器，设置账号。空间名为七牛对象存储空间名称（类似于刚刚创建的hexo-image-store），AccessKey和SecretKey在七牛个人面板下的密钥管理中，域名为七牛对象存储空间中内容管理页签下的外链默认域名。 配置好七牛账号后看到图床神器的面板： 将图片拖动到面板上即可上传到我们对应的空间，上传成功后面板变成下面的样子： 点击复制后默认得到Markdown格式的代码，可以直接贴到你的Markdown文本中： 1![mark](http://ow2qstwlo.bkt.clouddn.com/Blog/170912/jH6eJgHI5i.png?imageslim) 其中mark处表示图片还未加载成功时显示的替换文本；还可以在最后的括号前加”xxx”来作为图片下标，示例如下： 1![上传成功](http://ow2qstwlo.bkt.clouddn.com/Blog/170912/jH6eJgHI5i.png?imageslim "上传成功后面板样式") 谢谢观看！]]></content>
       <categories>
         <category>Hexo学习</category>
       </categories>
@@ -12,9 +12,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[如何使用七牛作为图床]]></title>
-    <url>%2F2017%2F09%2F12%2F15.%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E4%B8%83%E7%89%9B%E4%BD%9C%E4%B8%BA%E5%9B%BE%E5%BA%8A%2F</url>
-    <content type="text"><![CDATA[通常图片可以放在服务器里面随博文一起外发，但如果使用类似github之类的静态页的话空间很有限，所以我们需要从网络上链接到图片以节省空间。 这里推荐使用七牛（10GB免费存储，每月10GB免费下载流量）。 注册七牛首先需要注册并登陆七牛，按照官网说明创建空间（最好创建公开空间）。 上传图片 使用网页上传 我创建的空间为hexo-image-store，打开存储空间的内容管理，可以从这里上传图片（通过上传文件）。 图片URL由外链加相对路径下的随机码组成，图中的图片URL如下： 1http://ow2qstwlo.bkt.clouddn.com/Blog/170911/jBj4c87IiE.jpg 使用图床神器上传 下载MPic-图床神器，设置账号。空间名为七牛对象存储空间名称（类似于刚刚创建的hexo-image-store），AccessKey和SecretKey在七牛个人面板下的密钥管理中，域名为七牛对象存储空间中内容管理页签下的外链默认域名。 配置好七牛账号后看到图床神器的面板： 将图片拖动到面板上即可上传到我们对应的空间，上传成功后面板变成下面的样子： 点击复制后默认得到Markdown格式的代码，可以直接贴到你的Markdown文本中： 1![mark](http://ow2qstwlo.bkt.clouddn.com/Blog/170912/jH6eJgHI5i.png?imageslim) 其中mark处表示图片还未加载成功时显示的替换文本；还可以在最后的括号前加”xxx”来作为图片下标，示例如下： 1![上传成功](http://ow2qstwlo.bkt.clouddn.com/Blog/170912/jH6eJgHI5i.png?imageslim "上传成功后面板样式") 谢谢观看！]]></content>
+    <title><![CDATA[如何将Hexo博客登入百度入口]]></title>
+    <url>%2F2017%2F09%2F12%2F16.%E5%A6%82%E4%BD%95%E5%B0%86hexo%E5%8D%9A%E5%AE%A2%E7%99%BB%E5%85%A5%E7%99%BE%E5%BA%A6%E5%85%A5%E5%8F%A3%2F</url>
+    <content type="text"><![CDATA[通常我们会把 Hexo 博客挂到 github pages 上，但这样无法被百度收录，所以这里推荐将 Hexo 部署到 coding 上面。 将 Hexo 同时部署到 github 及 coding 上面首先是创建 coding 的 ssh 秘钥并绑定到 coding 上，这样可以免密推送。具体与 github 上面的设置类似，就不赘述了。 编辑站点配置文件，如下： 1234deploy: type: git repository: git@github.com:xxxxx/xxxxx.github.io.git branch: master 将部署格式改为下面这种形式，即可将Hexo博客同步部署到 github 及 coding。 12345deploy: type: git repo: github: git@github.com:xxxxx/xxxxx.github.io.git,master coding: git@git.coding.net:xxxxx/xxxxx.coding.me.git,master coding 上面的 pages 的配置过程这里也不赘述了。 域名解析如果绑定了个性域名的话，可以将个性域名指向两个主页，一般国外指向 github，国内指向 coding，这样访问速度也会快一些。dnspod 配置如下： 主机记录 记录类型 线路类型 记录值 * CNAME 国内 xxxxx.coding.me @ CNAME 国内 xxxxx.coding.me www CNAME 国内 xxxxx.coding.me www CNAME 默认 pages.coding.me www CNAME 国外 xxxxx.github.io 注意：个性域名如果没有备案的话，友言评论会报抱歉，当前网页参数有误，操作失败。 百度站长入口百度站长平台支持html文件、html标签及CNAME三种方法来验证域名归属，推荐使用html文件方法。 为了不让验证的html文件改变，需要将html文件放置到主题目录下的source文件夹下，之后就可以验证域名归属了。 接下来在博客根目录下安装站点地图插件： 12npm install hexo-generator-sitemap --savenpm install hexo-generator-baidu-sitemap --save 在博客目录的_config.yml中添加如下代码： 12345# 自动生成sitemapsitemap:path: sitemap.xmlbaidusitemap:path: baidusitemap.xml 在主题目录的_config.yml中使能百度推送： 1baidu_push: true 之后就可以在百度站长入口中抓取到你博客的链接了。 谢谢观看！]]></content>
       <categories>
         <category>Hexo学习</category>
       </categories>
