@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://shauew.tech/2017/09/18/17.LoRa%E5%8F%8ALoRaWAN%E7%AE%80%E4%BB%8B/</loc>
+    <lastmod>2017-09-19T17:49:56.630Z</lastmod>
+    <data>
+        <display>
+        <title>LoRa及LoRaWAN简介</title>
+        <pubTime>2017-09-17T17:25:04.000Z</pubTime>
+        
+        <tag>LoRa</tag>
+         
+         
+           
+             
+              <breadCrumb title="LoRa学习" url="http://shauew.tech/categories/LoRa%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://shauew.tech/2017/09/13/16.%E5%A6%82%E4%BD%95%E5%B0%86hexo%E5%8D%9A%E5%AE%A2%E7%99%BB%E5%85%A5%E7%99%BE%E5%BA%A6%E5%85%A5%E5%8F%A3/</loc>
     <lastmod>2017-09-17T17:48:10.921Z</lastmod>
     <data>
@@ -17,26 +37,6 @@
            
              
               <breadCrumb title="Hexo学习" url="http://shauew.tech/categories/Hexo%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://shauew.tech/2017/09/18/17.LoRa%E5%8F%8ALoRaWAN%E7%AE%80%E4%BB%8B/</loc>
-    <lastmod>2017-09-17T17:46:45.194Z</lastmod>
-    <data>
-        <display>
-        <title>LoRa及LoRaWAN简介</title>
-        <pubTime>2017-09-17T17:25:04.000Z</pubTime>
-        
-        <tag>LoRa</tag>
-         
-         
-           
-             
-              <breadCrumb title="LoRa" url="http://shauew.tech/categories/LoRa/"/>
           
         </display>
     </data>
