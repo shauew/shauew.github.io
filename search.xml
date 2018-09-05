@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hexo添加域名备案图案及备案号到页脚]]></title>
-    <url>%2F2017%2F09%2F23%2F18.Hexo%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A1%88%E5%8F%8A%E4%BF%A1%E6%81%AF%E5%88%B0%E9%A1%B5%E8%84%9A%2F</url>
-    <content type="text"><![CDATA[申请备案登陆全国公安机关互联网站安全服务平台，注册账号并按照官网说明申请域名备案。如果顺利的话，一周后会备案成功。 获取备案图案及信息备案通过后可在全国公安机关互联网站安全服务平台下载备案图案及备案编号HTML代码。 备案图案如下： 备案代码如下： 123&lt;div style="width:300px;margin:0 auto; padding:20px 0;"&gt; &lt;a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010602000549" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"&gt;&lt;img src="" style="float:left;"/&gt;&lt;p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;"&gt;川公网安备 51010602000549号&lt;/p&gt;&lt;/a&gt;&lt;/div&gt; 将备案图案及备案号添加到Hexo页脚首先为了部署后能在静态页中找到备案图案，需要先将备案图案置于 Hexo\themes\next\source\images 下，生成博客后通过 /images/备案图标.png 的方式来索引到。 之后修改 Hexo\themes\next\layout_partials 下的 footer.swig 文件来插入备案信息到页脚。将备案代码贴入改文件下的末尾，如下面的代码块所示： 123456789&#123;% if theme.copyright %&#125;&lt;div class="theme-info"&gt; xxxxxxxxxxxxxxxxxxxxxx&lt;/div&gt;&#123;% endif %&#125;&lt;div style="width:300px;margin:0 auto; padding:20px 0;"&gt; &lt;a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010602000549" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"&gt;&lt;img src="" style="float:left;"/&gt;&lt;p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;"&gt;川公网安备 51010602000549号&lt;/p&gt;&lt;/a&gt;&lt;/div&gt; 通过“hexo s”指令查看本地博客，可以看到备案信息已经显示在页脚，但是没有备案图案。 修改上面的代码，将备案信息中的 1&lt;img src="" style="float:left;"/&gt; 段做如下修改： 1&lt;img src="/images/备案图标.png" style="float:left;"/&gt; 添加了图片的相对路径（原来没有），之后再本地博客里面刷新，就可以看到备案图案及信息了。 Tips有没有发现备案信息和Hexo原来的页脚之间间距较大，可以通过将备案代码 1&lt;div style="width:300px;margin:0 auto; padding:20px 0;"&gt; 中的 padding：20px 改成5个皮克斯，这样看上去就比较自然了。 谢谢观看！]]></content>
+    <title><![CDATA[重回学习路--OK6410 Linux]]></title>
+    <url>%2F2018%2F09%2F06%2F19.OK6410%E5%AD%A6%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[前言忙了好久也不知道在忙啥，无意间登了一下博客，发现距上一次更新也有近一年了，遂回顾一下这段时间的经历。 OK6410离校时一位好友把我给他选的Linux学习板转让给我，他转去学习世界上最好的语言，我那时正忙于找工作，无暇学习，这一拖，就是三年了。 学习烧写按照手册一步步走，准备好附带的镜像，启动后通过终端指令选择擦写重烧录，有惊无险地完成了系统重装。尝试按照手册里步骤一步步测试板子功能，一切都是那么新鲜。 未完待续。。。。。。 谢谢观看！]]></content>
       <categories>
-        <category>Hexo学习</category>
+        <category>Linux学习</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[Hexo添加域名备案图案及备案号到页脚]]></title>
-    <url>%2F2017%2F09%2F23%2F18.Hexo%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A1%88%E5%8F%8A%E4%BF%A1%E6%81%AF%E5%88%B0%E9%A1%B5%E8%84%9A%20-%20%E5%89%AF%E6%9C%AC%2F</url>
+    <url>%2F2017%2F09%2F23%2F18.Hexo%E6%B7%BB%E5%8A%A0%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A1%88%E5%8F%8A%E4%BF%A1%E6%81%AF%E5%88%B0%E9%A1%B5%E8%84%9A%2F</url>
     <content type="text"><![CDATA[申请备案登陆全国公安机关互联网站安全服务平台，注册账号并按照官网说明申请域名备案。如果顺利的话，一周后会备案成功。 获取备案图案及信息备案通过后可在全国公安机关互联网站安全服务平台下载备案图案及备案编号HTML代码。 备案图案如下： 备案代码如下： 123&lt;div style="width:300px;margin:0 auto; padding:20px 0;"&gt; &lt;a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010602000549" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"&gt;&lt;img src="" style="float:left;"/&gt;&lt;p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;"&gt;川公网安备 51010602000549号&lt;/p&gt;&lt;/a&gt;&lt;/div&gt; 将备案图案及备案号添加到Hexo页脚首先为了部署后能在静态页中找到备案图案，需要先将备案图案置于 Hexo\themes\next\source\images 下，生成博客后通过 /images/备案图标.png 的方式来索引到。 之后修改 Hexo\themes\next\layout_partials 下的 footer.swig 文件来插入备案信息到页脚。将备案代码贴入改文件下的末尾，如下面的代码块所示： 123456789&#123;% if theme.copyright %&#125;&lt;div class="theme-info"&gt; xxxxxxxxxxxxxxxxxxxxxx&lt;/div&gt;&#123;% endif %&#125;&lt;div style="width:300px;margin:0 auto; padding:20px 0;"&gt; &lt;a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010602000549" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"&gt;&lt;img src="" style="float:left;"/&gt;&lt;p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;"&gt;川公网安备 51010602000549号&lt;/p&gt;&lt;/a&gt;&lt;/div&gt; 通过“hexo s”指令查看本地博客，可以看到备案信息已经显示在页脚，但是没有备案图案。 修改上面的代码，将备案信息中的 1&lt;img src="" style="float:left;"/&gt; 段做如下修改： 1&lt;img src="/images/备案图标.png" style="float:left;"/&gt; 添加了图片的相对路径（原来没有），之后再本地博客里面刷新，就可以看到备案图案及信息了。 Tips有没有发现备案信息和Hexo原来的页脚之间间距较大，可以通过将备案代码 1&lt;div style="width:300px;margin:0 auto; padding:20px 0;"&gt; 中的 padding：20px 改成5个皮克斯，这样看上去就比较自然了。 谢谢观看！]]></content>
       <categories>
         <category>Hexo学习</category>
