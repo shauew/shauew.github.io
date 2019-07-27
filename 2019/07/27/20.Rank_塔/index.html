@@ -96,18 +96,18 @@
 
 
 
-<meta name="description" content="题目描述题目转自牛客网！ 小易有一些立方体，每个立方体的边长为1，他用这些立方体搭了一些塔。 现在小易定义：这些塔的不稳定值为它们之中最高的塔与最低的塔的高度差。小易想让这些塔尽量稳定，所以他进行了如下操作：每次从某座塔上取下一块立方体，并把它放到另一座塔上。">
+<meta name="description" content="题目描述小易有一些立方体，每个立方体的边长为1，他用这些立方体搭了一些塔。 现在小易定义：这些塔的不稳定值为它们之中最高的塔与最低的塔的高度差。小易想让这些塔尽量稳定，所以他进行了如下操作：每次从某座塔上取下一块立方体，并把它放到另一座塔上。">
 <meta name="keywords" content="Rank">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Rank-塔">
 <meta property="og:url" content="http://shauew.tech/2019/07/27/20.Rank_塔/index.html">
 <meta property="og:site_name" content="潇湘夜雨">
-<meta property="og:description" content="题目描述题目转自牛客网！ 小易有一些立方体，每个立方体的边长为1，他用这些立方体搭了一些塔。 现在小易定义：这些塔的不稳定值为它们之中最高的塔与最低的塔的高度差。小易想让这些塔尽量稳定，所以他进行了如下操作：每次从某座塔上取下一块立方体，并把它放到另一座塔上。">
+<meta property="og:description" content="题目描述小易有一些立方体，每个立方体的边长为1，他用这些立方体搭了一些塔。 现在小易定义：这些塔的不稳定值为它们之中最高的塔与最低的塔的高度差。小易想让这些塔尽量稳定，所以他进行了如下操作：每次从某座塔上取下一块立方体，并把它放到另一座塔上。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-27T14:41:10.186Z">
+<meta property="og:updated_time" content="2019-07-27T14:52:18.852Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Rank-塔">
-<meta name="twitter:description" content="题目描述题目转自牛客网！ 小易有一些立方体，每个立方体的边长为1，他用这些立方体搭了一些塔。 现在小易定义：这些塔的不稳定值为它们之中最高的塔与最低的塔的高度差。小易想让这些塔尽量稳定，所以他进行了如下操作：每次从某座塔上取下一块立方体，并把它放到另一座塔上。">
+<meta name="twitter:description" content="题目描述小易有一些立方体，每个立方体的边长为1，他用这些立方体搭了一些塔。 现在小易定义：这些塔的不稳定值为它们之中最高的塔与最低的塔的高度差。小易想让这些塔尽量稳定，所以他进行了如下操作：每次从某座塔上取下一块立方体，并把它放到另一座塔上。">
 
 
 
@@ -428,8 +428,7 @@
       
 
       
-        <h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p><a href="https://www.nowcoder.com/practice/54868056c5664586b121d9098d008719?tpId=98&amp;tqId=32837&amp;tPage=1&amp;rp=1&amp;ru=/ta/2019test&amp;qru=/ta/2019test/question-ranking" target="_blank" rel="external"><strong>题目转自牛客网！</strong></a></p>
-<p>小易有一些立方体，每个立方体的边长为1，他用这些立方体搭了一些塔。</p>
+        <h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>小易有一些立方体，每个立方体的边长为1，他用这些立方体搭了一些塔。</p>
 <p>现在小易定义：这些塔的不稳定值为它们之中最高的塔与最低的塔的高度差。小易想让这些塔尽量稳定，所以他进行了如下操作：每次从某座塔上取下一块立方体，并把它放到另一座塔上。</p>
 <a id="more"></a>
 <p>注意，小易不会把立方体放到它原本的那座塔上，因为他认为这样毫无意义。</p>
@@ -449,7 +448,7 @@
 <p>21</p>
 <p>23</p>
 <h1 id="C语言实现"><a href="#C语言实现" class="headerlink" title="C语言实现"></a>C语言实现</h1><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">struct</span> &#123;</span></div><div class="line">    <span class="keyword">int</span> high;</div><div class="line">    <span class="keyword">int</span> low;</div><div class="line">&#125; <span class="built_in">list</span>[<span class="number">100</span>];</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">()</span></span></div><div class="line"><span class="function"></span>&#123;</div><div class="line">    <span class="keyword">int</span> n, k, i, value;</div><div class="line">    <span class="keyword">int</span> s[<span class="number">100</span>];</div><div class="line">    <span class="keyword">int</span> min, max;</div><div class="line">    <span class="keyword">int</span> min_index, max_index;</div><div class="line">    <span class="keyword">int</span> loop = <span class="number">0</span>;</div><div class="line"></div><div class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;k);</div><div class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; n; i++) &#123;</div><div class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;s[i]);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">while</span> (<span class="number">1</span>) &#123;</div><div class="line"></div><div class="line">        min = <span class="number">10000</span>;</div><div class="line">        max = <span class="number">0</span>;</div><div class="line"></div><div class="line">        <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; n; i++) &#123;</div><div class="line">            <span class="keyword">if</span> (s[i] &gt; max) &#123;</div><div class="line">                max = s[i];</div><div class="line">                max_index = i;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">if</span> (s[i] &lt; min) &#123;</div><div class="line">                min = s[i];</div><div class="line">                min_index = i;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        value = max - min;</div><div class="line">        s[max_index]--;</div><div class="line">        s[min_index]++;</div><div class="line"></div><div class="line">        <span class="built_in">list</span>[loop].high = max_index;</div><div class="line">        <span class="built_in">list</span>[loop].low  = min_index;</div><div class="line">        loop++;</div><div class="line"></div><div class="line">        <span class="keyword">if</span> ((value &lt;= <span class="number">1</span>) || (loop == k)) &#123;</div><div class="line">            <span class="keyword">if</span> (value == <span class="number">0</span>) &#123;</div><div class="line">                loop--;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">break</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="built_in">printf</span>(<span class="string">"%d %d\n"</span>, value, loop);</div><div class="line"></div><div class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; loop; i++) &#123;</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"%d %d\n"</span>, <span class="built_in">list</span>[i].high + <span class="number">1</span>, <span class="built_in">list</span>[i].low + <span class="number">1</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-
+<h1 id="题目转自牛客网！"><a href="#题目转自牛客网！" class="headerlink" title="题目转自牛客网！"></a><a href="https://www.nowcoder.com/practice/54868056c5664586b121d9098d008719?tpId=98&amp;tqId=32837&amp;tPage=1&amp;rp=1&amp;ru=/ta/2019test&amp;qru=/ta/2019test/question-ranking" target="_blank" rel="external"><strong>题目转自牛客网！</strong></a></h1>
       
     </div>
     
@@ -740,7 +739,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目描述"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#C语言实现"><span class="nav-number">2.</span> <span class="nav-text">C语言实现</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目描述"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#C语言实现"><span class="nav-number">2.</span> <span class="nav-text">C语言实现</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#题目转自牛客网！"><span class="nav-number">3.</span> <span class="nav-text">题目转自牛客网！</span></a></li></ol></div>
             
 
           </div>
