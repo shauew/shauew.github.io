@@ -1,4 +1,4 @@
+http://shauew.tech/2019/07/27/20.Rank_塔/
 http://shauew.tech/2018/09/06/19.OK6410学习/
 http://shauew.tech/2017/09/23/18.Hexo添加备案图案及信息到页脚/
 http://shauew.tech/2017/09/18/17.LoRa及LoRaWAN简介/
-http://shauew.tech/2017/09/13/16.如何将hexo博客登入百度入口/

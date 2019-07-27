@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Rank-塔]]></title>
+    <url>%2F2019%2F07%2F27%2F20.Rank_%E5%A1%94%2F</url>
+    <content type="text"><![CDATA[题目描述题目转自牛客网！ 小易有一些立方体，每个立方体的边长为1，他用这些立方体搭了一些塔。 现在小易定义：这些塔的不稳定值为它们之中最高的塔与最低的塔的高度差。小易想让这些塔尽量稳定，所以他进行了如下操作：每次从某座塔上取下一块立方体，并把它放到另一座塔上。 注意，小易不会把立方体放到它原本的那座塔上，因为他认为这样毫无意义。 现在小易想要知道，他进行了不超过k次操作之后，不稳定值最小是多少。 输入描述: 第一行两个数n,k(1&lt;= n &lt;=100,0&lt;= k &lt;=1000)表示塔的数量以及最多操作的次数。 第二行n个数，ai(1&lt;= ai &lt;=104)表示第i座塔的初始高度。 输出描述: 第一行两个数s, m，表示最小的不稳定值和操作次数(m &lt;= k) 接下来m行，每行两个数x,y表示从第x座塔上取下一块立方体放到第y座塔上。 示例1 输入 32 585 输出 02 21 23 C语言实现123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960#include &lt;stdio.h&gt;struct &#123; int high; int low;&#125; list[100];int main ()&#123; int n, k, i, value; int s[100]; int min, max; int min_index, max_index; int loop = 0; scanf("%d%d", &amp;n, &amp;k); for (i = 0; i &lt; n; i++) &#123; scanf("%d", &amp;s[i]); &#125; while (1) &#123; min = 10000; max = 0; for (i = 0; i &lt; n; i++) &#123; if (s[i] &gt; max) &#123; max = s[i]; max_index = i; &#125; if (s[i] &lt; min) &#123; min = s[i]; min_index = i; &#125; &#125; value = max - min; s[max_index]--; s[min_index]++; list[loop].high = max_index; list[loop].low = min_index; loop++; if ((value &lt;= 1) || (loop == k)) &#123; if (value == 0) &#123; loop--; &#125; break; &#125; &#125; printf("%d %d\n", value, loop); for (i = 0; i &lt; loop; i++) &#123; printf("%d %d\n", list[i].high + 1, list[i].low + 1); &#125; return 0;&#125;]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>Rank</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[重回学习之路--OK6410 Linux]]></title>
     <url>%2F2018%2F09%2F06%2F19.OK6410%E5%AD%A6%E4%B9%A0%2F</url>
     <content type="text"><![CDATA[前言忙了好久也不知道在忙啥，无意间登了一下博客，发现距上一次更新也有近一年了，遂回顾一下这段时间的经历。 OK6410离校时一位好友把我给他选的Linux学习板转让给我，他转去学习世界上最好的语言，我那时正忙于找工作，无暇学习，这一拖，就是三年了。 学习烧写按照手册一步步走，准备好附带的镜像，启动后通过终端指令选择擦写重烧录，有惊无险地完成了系统重装。尝试按照手册里步骤一步步测试板子功能，一切都是那么新鲜。 未完待续。。。。。。 谢谢观看！]]></content>
